@@ -92,7 +92,20 @@ Prototyping is defined as the process of developing a working replication of a p
 - There are four types of Prototyping Models, which are described below.
 
 1. Rapid Throwaway Prototyping
-2. Evolutionary Prototyping
+2. Evolutionary Prototyping:
+The evolutionary model is a combination of the Iterative and Incremental models of the software development life cycle. Delivering your system in a big bang release, delivering it in incremental process over time is the action done in this model. Some initial requirements and architecture envisioning need to be done. It is better for software products that have their feature sets redefined during development because of user feedback and other factors. This article focuses on discussing the Evolutionary Model in detail.
+![alt text](image-10.png)
+Advantages Evolutionary Model
+Adaptability to Changing Requirements: Evolutionary models work effectively in projects when the requirements are ambiguous or change often. They support adjustments and flexibility along the course of development.
+Early and Gradual Distribution: Functional components or prototypes can be delivered early thanks to incremental development. Faster user satisfaction and feedback may result from this.
+User Commentary and Involvement: Evolutionary models place a strong emphasis on ongoing user input and participation. This guarantees that the software offered closely matches the needs and expectations of the user.
+Improved Handling of Difficult Projects: Big, complex tasks can be effectively managed with the help of evolutionary models. The development process is made simpler by segmenting the project into smaller, easier-to-manage portions.
+Disadvantages Evolutionary Model
+Communication Difficulties: Evolutionary models require constant cooperation and communication. The strategy may be less effective if there are gaps in communication or if team members are spread out geographically.
+Dependence on an Expert Group: A knowledgeable and experienced group that can quickly adjust to changes is needed for evolutionary models. Teams lacking experience may find it difficult to handle these model’s dynamic nature.
+Increasing Management Complexity: Complexity can be introduced by organizing and managing several increments or iterations, particularly in large projects. In order to guarantee integration and synchronization, good project management is needed.
+Greater Initial Expenditure: As evolutionary models necessitate continual testing, user feedback and prototyping, they may come with a greater starting cost. This may be a problem for projects that have limited funding.
+
 3. ### Incremental Prototyping or Iterative Enhancment Model 
 ![alt text](image-7.png)
 ![alt text](image-8.png)
@@ -113,3 +126,9 @@ Every iteration step is distinct and does not flow into the next.
 It takes a lot of time and effort to fix an issue in one unit if it needs to be corrected in all the units.
 
 4. Extreme Prototyping
+
+
+## Spiral Model?
+The Spiral Model is a Software Development Life Cycle (SDLC) model that provides a systematic and iterative approach to software development. In its diagrammatic representation, looks like a spiral with many loops. The exact number of loops of the spiral is unknown and can vary from project to project. Each loop of the spiral is called a phase of the software development process.
+
+![alt text](<Screenshot 2025-03-03 at 7.16.45 PM.png>)
