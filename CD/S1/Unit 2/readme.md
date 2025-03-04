@@ -52,3 +52,9 @@ The “L” stands for left-to-right scanning of the input. This means the parse
 
 The “R” stands for rightmost derivation in reverse. This refers to the way the parser constructs the parse tree. Instead of building the tree from the top down (like in top-down parsing), LR parsing works from the leaves (the input symbols) and gradually reduces them back to the start symbol, following a rightmost derivation in reverse.
 
+
+## CLR
+![alt text](<Screenshot 2025-03-04 at 11.38.25 PM.png>)
+
+## LALR
+![alt text](<Screenshot 2025-03-05 at 12.04.19 AM.png>)
