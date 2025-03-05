@@ -18,3 +18,17 @@ Development Time         Long               	                	Medium            
 ![alt text](<Screenshot 2025-03-01 at 4.16.01 PM.png>)
 
 - no of units of both needed to sell to get revenue  is 4k and 10,500 units. compare ....
+
+## What are Actuators? Explain their role in Embedded System design by taking some example.
+
+Answer:
+Actuators are devices that convert electrical signals into physical movement. They play a crucial role in embedded systems by enabling interaction with the physical world.
+
+Example:
+
+DC Motors in Robotics: Used for movement control.
+Servo Motors in Drones: Used for precise angular positioning.
+Solenoid Valves in Industrial Automation: Used for controlling fluid flow in embedded systems.
+
+## Market loss due to delay = (Revenue per week) × (Weeks delayed)
+Revenue per week = $700,000 / 150 = $4,666.67 per week
