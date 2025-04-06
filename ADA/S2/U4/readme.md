@@ -74,7 +74,8 @@ int fibonacci(int n) {
 }
 ```
 
-##  0/1 Knapsack
+##  0/1 Knapsack 
+- Bottom up. bcz answer at bottom.
 - (n+1)(w+1) table.
 - call fns.
 - check above if present then dont include.
@@ -99,3 +100,10 @@ max {
 - to get substring if its above ==> dont include . 
 - move to left and above both.
 ![alt text](<Screenshot 2025-04-06 at 12.33.56 PM.png>)
+
+
+
+
+
+## Reaming 
+- matrix chain multiplication,

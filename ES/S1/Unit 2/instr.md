@@ -1,7 +1,8 @@
-Data Transfer Instructions
+### Data Transfer Instructions
 
 - MOV A, Rn → Move register Rn to accumulator.
 mov @r1 , a == move to memory pointefd by r1 .
+> M[r1]<-a
 - MOV A, direct → Move direct address content to accumulator.
 - MOVX A, @DPTR → Move external data memory content to accumulator.
 PUSH direct → Push content to stack.
@@ -24,13 +25,19 @@ DEC Rx – Decrement the contents of register Rx by 1
 DJNZ Rn, label - DJNZ (Decrement and Jump if Not Zero)
 
 Branching (Jump & Call) Instructions
-SJMP label → Short jump (within ±127 bytes)
-LJMP address → Long jump (16-bit address)
+- SJMP label → Short jump (within ±127 bytes)
+- LJMP address → Long jump (16-bit address)
 AJMP address → Absolute jump (11-bit address)
 JZ label → Jump if A is zero
 JNZ label → Jump if A is nonzero
 CALL address → Call subroutine at given address
 RET → Return from subroutine
+-    DJNZ R1 , LOOP : 
+Decrement and jump.
+- CJMP A, Temp , l3 : 
+compare and jump.
+- 
+
 
 Bit Manipulation Instructions
 - SETB C → Set carry flag
