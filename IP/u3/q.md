@@ -49,3 +49,4 @@ The number of possible input combinations is infinite or extremely large.
 It is time and cost prohibitive.
 
 Redundant tests do not add value. Hence, practical testing focuses on equivalence partitioning, boundary value, and risk-based approaches.
+
