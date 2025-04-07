@@ -50,6 +50,28 @@ Address Resolution Protocol (ARP) is a protocol or procedure that connects an ev
 
 **Used to dynamically assign IP addresses to devices.**
 
+The DHCP process consists of 4 steps, often abbreviated as **DORA**:
+
+1. **Discover**:  
+   The client sends a broadcast to locate available DHCP servers.
+
+2. **Offer**:  
+   The server responds with an available IP address and config.
+
+3. **Request**:  
+   The client requests to lease the offered IP address.
+
+4. **Acknowledge**:  
+   The server confirms the IP address assignment.
+
+⌛ Lease Time
+IPs are leased for a limited period.
+
+Clients must renew leases before expiration.
+
+If not renewed, IP returns to the DHCP pool.
+
+
 ### 📄 DHCP Packet Format (Based on BOOTP, 236+ bytes):
 
 | Field Name            | Size (bytes) | Description                              |
