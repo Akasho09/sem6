@@ -50,3 +50,25 @@ It is time and cost prohibitive.
 
 Redundant tests do not add value. Hence, practical testing focuses on equivalence partitioning, boundary value, and risk-based approaches.
 
+## 
+BVA Test Cases:
+Boundary values for:
+
+a: 20 (min), 21 (min+1), 29 (max−1), 30 (max)
+
+b, c, d: 40, 41, 59, 60
+
+Robust Test Cases (including invalid values):
+Robust = min-1, min, min+1, max−1, max, max+1
+
+For a: 19, 20, 21, 29, 30, 31 → 6 values
+
+For each of b, c, d: 39, 40, 41, 59, 60, 61 → 6 values each
+
+Total Robust Test Cases = 6⁴ = 1296
+
+Worst Case BVA (4 variables × 6 values):
+= 6 × 4 = 24 test cases
+
+
+## 
