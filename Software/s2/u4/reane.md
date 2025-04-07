@@ -40,4 +40,4 @@ Locating and fixing bugs using methods like backtracking, cause elimination, and
 Examples: JUnit, Selenium, Postman, LoadRunner, etc.
 
 ## Software reliability
-![alt text](<../../../../Screenshot 2025-04-07 at 6.47.08 PM.png>)
+![akash](<Screenshot 2025-04-07 at 6.47.08 PM.png>)

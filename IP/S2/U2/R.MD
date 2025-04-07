@@ -71,26 +71,3 @@ Address Resolution Protocol (ARP) is a protocol or procedure that connects an ev
 | options               | variable     | DHCP options (e.g., lease time, router)  |
 
 ---
-
-
-### 📄 RIP Packet Format (20 bytes header + routing entries):
-
-| Field Name     | Size (bytes) | Description                            |
-|----------------|--------------|----------------------------------------|
-| Command        | 1            | Request (1) or Response (2)            |
-| Version        | 1            | RIP version (1 or 2)                   |
-| Unused         | 2            | Must be zero                           |
-| Route Entries  | 20 * N       | One or more route entries              |
-
-### 📄 Route Entry Format (Each entry: 20 bytes):
-
-| Field Name     | Size (bytes) | Description                            |
-|----------------|--------------|----------------------------------------|
-| Address Family | 2            | AFI (e.g., 2 for IP)                   |
-| Route Tag      | 2            | For inter-domain routing               |
-| IP Address     | 4            | Destination IP address                 |
-| Subnet Mask    | 4            | Subnet mask                           |
-| Next Hop       | 4            | IP address of next hop router         |
-| Metric         | 4            | Hop count (1 to 16, where 16 = infinity)|
-
----
