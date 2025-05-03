@@ -1,4 +1,4 @@
-## ## Unit 3: Software Requirement Analysis and Specifications, Design & Software Reliability
+## Unit 3: Software Requirement Analysis and Specifications, Design & Software Reliability
 
 ### 🔍 Problem Analysis
 
@@ -9,7 +9,6 @@ Identifying system goals and constraints.
 Involves feasibility study and cost-benefit analysis.
 
 ### 📊 Data Flow Diagrams (DFD)
-
 - Graphical representation of data movement in a system.
 - Levels: 
 
@@ -24,19 +23,38 @@ Involves feasibility study and cost-benefit analysis.
 3. External entities, 
 4. and Data flows. 
 
-## 🧩 Use Case Diagrams
+## 🧩 Use Case Diagram - Unified Modeling Language (UML)
+- A Use Case Diagram in Unified Modeling Language (UML) is a visual representation that illustrates the interactions between users (actors) and a system. 
+- It captures the functional requirements of a system, showing how different users engage with various use cases, or specific functionalities, within the system. Use case diagrams provide a high-level overview of a system’s behavior, making them useful for stakeholders, developers, and analysts to understand how a system is intended to operate from the user’s perspective, and how different processes relate to one another. They are crucial for defining system scope and requirements
+![alt text](image-2.png)
 
+### How to draw a Use Case diagram in UML?
+Below are the main steps to draw use case diagram in UML:
+• Step 1: Identify Actors: Determine who or what interacts with the system. These
+are your actors. They can be users, other systems, or external entities.
+• Step 2: Identify Use Cases: Identify the main functionalities or actions the
+system must perform. These are your use cases. Each use case should represent a
+specific piece of functionality.
+• Step 3: Connect Actors and Use Cases: Draw lines (associations) between
+actors and the use cases they are involved in. This represents the interactions
+between actors and the system.
+• Step 4: Add System Boundary: Draw a box around the actors and use cases to
+represent the system boundary. This defines the scope of your system.
+• Step 5: Define Relationships: If certain use cases are related or if one use case is
+an extension of another, you can indicate these relationships with appropriate
+notations.
+• Step 6: Review and Refine: Step back and review your diagram. Ensure that it
+accurately represents the interactions and relationships in your system. Refine as
+needed.
+• Step 7: Validate: Share your use case diagram with stakeholders and gather
+feedback. Ensure that it aligns with their understanding of the system's
+functionality.
 UML diagrams that show system functionalities from a user’s perspective.
 
-Actors and use cases define interaction.
+#### examples :
+1. Below is the use case diagram of an Online Shopping System:
+![alt text](image-3.png)
 
-🧪 Software Prototyping
-
-Building a working model of the system early in the development process.
-
-Types: Throwaway, Evolutionary, Incremental, and Extreme prototyping.
-
-Benefits: Early feedback, better requirement analysis.
 
 ##  ⚖️ Cohesion and Coupling
 
@@ -116,10 +134,21 @@ Focus on functional decomposition.
 
 Uses DFDs to structure the system.
 
+- In function-oriented design, the system is comprised of many smaller sub-systems known as functions. These
+functions are capable of performing significant task in the system. The system is considered as top view of all
+functions.
+- Function oriented design inherits some properties of structured design where divide and conquer methodology is
+used.
+
 ## 🧱 Object Oriented Design
 
 Uses concepts like classes, objects, inheritance, polymorphism.
-
+- 
+• Objects - All entities involved in the solution design are known as objects. For example, person, banks,
+company and customers are treated as objects. Every entity has some attributes associated to it and has
+some methods to perform on the attributes.
+• Classes - A class is a generalized description of an object. An object is an instance of a class. Class defines all
+the attributes, which an object can have and methods, which defines the functionality of the object.
 More reusable and modular design.
 
 🖥️ User Interface Design
@@ -156,3 +185,4 @@ SEI-CMM: Capability Maturity Model for software processes. Levels: Initial → R
 | **Flexibility**        | More rigid and documentation-heavy                            | More process improvement–oriented                                    |
 
 ---
+
