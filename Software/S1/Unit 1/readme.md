@@ -1,12 +1,14 @@
 # What is software?
 
-Computer programs and associated documentation
+Computer programs and associated documentation.
 
-Software=Program+Documentation+Operating Procedures
+> Software=Program+Documentation+Operating Procedures
 
 ## Software Engineering
 
-is the process of designing, developing, testing, and maintaining software. It is a systematic and disciplined approach to software development that aims to create high-quality, reliable, and maintainable software. Software engineering includes a variety of techniques, tools, and methodologies, including requirements analysis, design, testing, and maintenance.
+is the process of designing, developing, testing, and maintaining software. 
+
+It is a systematic and disciplined approach to software development that aims to create high-quality, reliable, and maintainable software. Software engineering includes a variety of techniques, tools, and methodologies, including requirements analysis, design, testing, and maintenance.
 
 ![alt text](image.png)
 
@@ -21,7 +23,7 @@ is the process of designing, developing, testing, and maintaining software. It i
 - As per the IBM report, “31%of the project get cancelled before they are completed, 53% over- run their cost estimates by an average of 189% and for every 100 projects, there are 94 restarts
 - Moore's Law states that the number of transistors on a microchip `doubles` about every two years with a minimal cost increase. In 1965, Gordon E. Moore, the co-founder of Intel, made an observation that eventually became known as Moore's Law.
 
-  ie software have same spedd throughout where as hardwares productivity increses overtime.
+  ie software have same spedd throughout where as hardwares evolve in productivity overtime.
 
 ## Software development Life cycle
 
@@ -115,6 +117,7 @@ The Iterative Waterfall Model is a software development approach that combines t
 The V-Model is a software development life cycle (SDLC) model that provides a systematic and visual representation of the software development process. It is based on the idea of a “V” shape, with the two legs of the “V” representing the progression of the software development process from requirements gathering and analysis to design, implementation, testing, and maintenance.
 
 ![alt text](image-5.png)
+![alt text](image-18.png)
 
 Advantages of V-Model
 
@@ -167,18 +170,27 @@ Prototyping is defined as the process of developing a working replication of a p
 
    The evolutionary model is a combination of the Iterative and Incremental models of the software development life cycle. Delivering your system in a big bang release, delivering it in incremental process over time is the action done in this model. Some initial requirements and architecture envisioning need to be done. It is better for software products that have their feature sets redefined during development because of user feedback and other factors. This article focuses on discussing the Evolutionary Model in detail.
 
-    - Evolutionary process model resembles iterative enhancement
-model. The same phases as defined for the waterfall model occur
-here in a cyclical fashion. This model differs from iterative
-enhancement model in the sense that this does not require a
-useable product at the end of each cycle. In evolutionary
-development, requirements are implemented by category rather
-than by priority.
-This model is useful for projects using new technology that is not
-well understood. This is also used for complex projects where all
-functionality must be delivered at one time, but the requirements
-are unstable or not well understood at the beginning
+   - Evolutionary process model resembles iterative enhancement
 
+model. The same phases as defined for the waterfall model occur
+
+here in a cyclical fashion. This model differs from iterative
+
+enhancement model in the sense that this does not require a
+
+useable product at the end of each cycle. In evolutionary
+
+development, requirements are implemented by category rather
+
+than by priority.
+
+This model is useful for projects using new technology that is not
+
+well understood. This is also used for complex projects where all
+
+functionality must be delivered at one time, but the requirements
+
+are unstable or not well understood at the beginning
 
 ![alt text](image-10.png)
 
@@ -205,9 +217,8 @@ Greater Initial Expenditure: As evolutionary models necessitate continual testin
 3. ### Incremental Prototyping or Iterative Enhancment Model
 
    ![alt text](image-7.png)
-
+   ![alt text](image-15.png)
    ![alt text](image-8.png)
-
    ![alt text](image-9.png)
 
 - Advantages of the Incremental Process Model
@@ -239,8 +250,12 @@ Greater Initial Expenditure: As evolutionary models necessitate continual testin
 
 4. Extreme Prototyping
 
+## DIFF BETWEEN ITERATIVE ENHANCEMENT AND EVOLUTIONARY MODEL :
+![alt text](image-16.png)
+
 ## Spiral Model?
 
 The Spiral Model is a Software Development Life Cycle (SDLC) model that provides a systematic and iterative approach to software development. In its diagrammatic representation, looks like a spiral with many loops. The exact number of loops of the spiral is unknown and can vary from project to project. Each loop of the spiral is called a phase of the software development process.
 
 ![alt text](<Screenshot 2025-03-03 at 7.16.45 PM.png>)
+![alt text](image-17.png)
