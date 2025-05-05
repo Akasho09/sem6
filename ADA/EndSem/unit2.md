@@ -116,7 +116,7 @@ Recursively apply the same logic to the sub-arrays.
 
 ```c++
 int partition(int arr[], int low, int high) {
-    int pivot = arr[high]; // pivot element
+    int pivot = arr[high];   // pivot element
     int i = low - 1;        // Index of smaller element
 
     for (int j = low; j < high; j++) {
