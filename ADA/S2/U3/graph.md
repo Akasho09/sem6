@@ -13,7 +13,7 @@
 - QUEUE.
 - put connected to queue after previous and pop prev.
 
-## DFS 
+## DFS
 - STACK
 - from in stack and to in answer.
 - backtract if end to stack.

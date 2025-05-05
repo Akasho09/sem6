@@ -59,7 +59,7 @@ int fibonacci(int n) {
 
 - OPTIMIZEED 
 
-```CPP
+```cpp
 int fibonacci(int n) {
     if (n <= 1) return n;
 
@@ -109,10 +109,11 @@ max {
 
 ![alt text](<Screenshot 2025-04-06 at 12.33.56 PM.png>)
 
-
 ## matrix chain multiplication
 
 ![alt text](<Screenshot 2025-04-07 at 12.31.07 AM.png>)
 
 - k table give parenthesis 
 - search for 1-4 , then new big parenthesis like 2-3(row 2) or 1-3(row 1).
+
+
