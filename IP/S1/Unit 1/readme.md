@@ -104,10 +104,9 @@ IPv4 Datagram Header
 - Type of service: Low Delay, High Throughput, Reliability (8 bits) 
 Differentiated Services Code Point (DSCP).
 3 bits	Precedence (Priority)
-4 bits	Delay, Throughput, Reliability
+4 bits	Delay, Throughput, Reliability ,C=Cost 
 1 bit	Explicit Congestion Notification (ECN)
 PPPDTRCE
-C=Cost
 
 - Total Length: Length of header + Data (16 bits), which has a minimum value 20 bytes and the maximum is 65,535 bytes. 
 - Identification: Unique Packet Id for identifying the group of fragments of a single IP datagram (16 bits) 
@@ -203,7 +202,7 @@ Protocol: Packet Layer Protocol (PLP)
     Call Clearing
     Restarting
     PVCs are permanently in Data Transfer mode.
-
+    
 Function: Manages the establishment, maintenance, and termination of virtual circuits, and handles packet sequencing and flow contrOL.
 
 

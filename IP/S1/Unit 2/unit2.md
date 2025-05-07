@@ -47,5 +47,25 @@ Data - can be up to 16,000 octets, but the 16-bit FCS generally limits the whole
 Frame Check Sequence (FCS)
 Ending Delimiter Flag - 0x7E
 
-## HDLC 
+## 🛰️ HDLC (High-Level Data Link Control)
+HDLC is a bit-oriented protocol used for data communication over point-to-point and multipoint links. It is defined by ISO and is used at the Data Link Layer (Layer 2) of the OSI model.
+| Feature                      | Description                                        |
+| ---------------------------- | -------------------------------------------------- |
+| **Protocol Type**            | Bit-oriented protocol                              |
+| **Layer**                    | Data Link Layer (Layer 2)                          |
+| **Communication**            | Point-to-point and multipoint                      |
+| **Error Control**            | Yes (uses CRC)                                     |
+| **Flow Control**             | Yes                                                |
+| **Framing**                  | Uses flags (`01111110`) to define frame boundaries |
+| **Synchronous Transmission** | Yes                                                |
+
+📥 Types of HDLC Frames:
+
+| Frame Type  | Meaning           | Use Case                                         |
+| ----------- | ----------------- | ------------------------------------------------ |
+| **I-frame** | Information frame | Carries user data and control info               |
+| **S-frame** | Supervisory frame | Used for flow and error control                  |
+| **U-frame** | Unnumbered frame  | For link management (setup, disconnection, etc.) |
+
+
 ![alt text](image-5.png)
