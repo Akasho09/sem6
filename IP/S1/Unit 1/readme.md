@@ -7,7 +7,7 @@ Transmission Control Protocol/Internet Protocol
 ## TCP Header
 ![alt text](image-1.png)
 -------------------------------------------------
-|  Source Port   |  Destination Port            |  4 Bytes
+|  Source Port        |  Destination Port       |  4 Bytes
 -------------------------------------------------
 |            Sequence Number                    |  4 Bytes
 -------------------------------------------------
@@ -159,3 +159,51 @@ IGMP messages are exchanged between hosts and routers. The main message types ar
 Membership Query (Type 0x11)	Sent by routers to ask which devices want multicast traffic.	v1, v2, v3
 Membership Report (Type 0x16, 0x22)	Sent by hosts to join a multicast group.	v1, v2, v3
 Leave Group (Type 0x17)	Sent by hosts to leave a multicast group (v2 and later).	v2, v3
+
+
+## X.25
+X.25 is a protocol suite developed by the International Telecommunication Union (ITU-T) for packet-switched wide area network (WAN) communication. It was designed to facilitate reliable data transmission over public data networks, particularly those utilizing analog telephone lines, which were prone to errors.
+
+🧱 X.25 Protocol Layers
+X.25 corresponds to the lower three layers of the OSI (Open Systems Interconnection) model:
+
+1. Physical Layer (Layer 1):
+Function: Defines the electrical and mechanical aspects of the physical connection between DTE and DCE.
+Example: Specifies voltage levels, connector types, and transmission rates.
+
+2. Data Link Layer (Layer 2):
+Protocol: Link Access Procedure Balanced (LAPB)
+- Although Link Access Protocol (LAP) can be used with X.25, most commonly LAPB (a variation on the HDLC frame format) is used to provide balanced relationships where either device can send commands and receive responses.
+![alt text](image-7.png)
+
+Function: Ensures error-free transmission between DTE and DCE by handling framing, error detection, and retransmission of corrupted frames.
+
+3. Packet Layer (Layer 3):
+Protocol: Packet Layer Protocol (PLP)
+![alt text](image-8.png)
+   1. General Format Identifier (GFI): This defines the sequencing requirements and contains; the Qualifier (Q) bit which identifies information destined for PADs; the Delivery (D) bit which calls for end to end acknowledgment and the Sequence Number (SN) which describes whether the number sequence used is modulo 8 or modulo 128.
+    2. Logical Channel Identifier (LCI): This identifies the virtual circuit (whether Switched or Permanent) between the two end stations and is made up of the 4-bit Logical Channel Group Number (LCGN) and the 8-bit Logical Channel Number (LCN). The virtual circuit is locally significant and can change from call setup to call setup.
+    3. Packet Type Identifier (PTI): This describes the packet type as tabled below:
+    Hex Code	DTE to DCE	DCE to DTE
+    0B	Call Request	Incoming Call
+    OF	Call Accept	Call Connected
+    13	Clear Request	Clear Indication
+    17	DTE Clear Confirmation	DCE Clear Confirmation
+    x1	DTE RR	DCE RR
+    x5	DTE RNR	DCE RNR
+    x9	DTE REJ	DCE REJ
+    1D	Reset Request	Reset Indication
+    1F	DTE Reset Confirmation	DCE Reset Confirmation
+    FD	Restart Request	Restart Indication
+    FF	DTE Restart Confirmation	DCE Restart Confirmation
+    Using the above PTI types, PLP operates in five stages:
+    Call Setup
+    Data Transfer
+    Idle - used once the SVC is up but no data transfer is occurring.
+    Call Clearing
+    Restarting
+    PVCs are permanently in Data Transfer mode.
+
+Function: Manages the establishment, maintenance, and termination of virtual circuits, and handles packet sequencing and flow contrOL.
+
+
