@@ -155,3 +155,15 @@ Modular design entails creating a system composed of separate, interchangeable m
 | 1167 ≤ x < 3859  | C                                  |
 | 3859 ≤ x < 90000 | D                                  |
 | x ≥ 90000        | D                                  |
+
+## 
+| **Feature**          | **Embedded Systems**                                                                               | **Personal Computers**                                                                                        |
+| -------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Purpose**          | Designed to perform a specific task or set of tasks.                                               | Designed for general-purpose computing, supporting a wide range of applications.                              |
+| **Functionality**    | Highly specialized and optimized for specific functions (e.g., washing machines, medical devices). | Versatile and capable of running multiple types of applications (e.g., word processing, gaming, development). |
+| **Hardware**         | Typically has specialized hardware designed for specific tasks.                                    | Flexible hardware that can be upgraded and supports various peripherals (e.g., monitor, keyboard, mouse).     |
+| **Operating System** | Often runs a Real-Time Operating System (RTOS) or no OS at all, depending on the application.      | Runs a general-purpose operating system like Windows, macOS, or Linux.                                        |
+| **Performance**      | Optimized for efficiency and low power consumption.                                                | High processing power, memory, and graphics capabilities for a wide range of tasks.                           |
+| **Cost**             | Typically low cost due to specific hardware requirements.                                          | Generally higher cost due to more versatile and powerful hardware.                                            |
+| **Size**             | Compact and designed to fit in small devices.                                                      | Larger and designed to handle a wide range of tasks, often with more physical space.                          |
+| **Examples**         | Microwave ovens, medical monitoring systems, automotive control systems, robots.                   | Desktop computers, laptops, gaming PCs, workstations.                                                         |

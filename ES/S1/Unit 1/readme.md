@@ -92,3 +92,15 @@ SPEP : It is hardwired for a specific function and cannot be reprogrammed for ot
 ### GCD using SPP
 
 ![alt text](<Screenshot 2025-03-01 at 6.28.24 PM.png>)
+
+
+## A Watchdog Timer (WDT) 
+is a hardware or software timer used to monitor the operation of a system, specifically embedded systems. Its main purpose is to detect and recover from malfunctions or errors that could cause the system to freeze or become unresponsive.
+
+How It Works:
+- The watchdog timer starts counting when the system starts running.
+- The system must reset or "kick" the timer at regular intervals to indicate that it is functioning properly.
+- If the system fails to reset the watchdog timer within the predefined time limit (because of a system hang, freeze, or crash), the watchdog timer will trigger a reset of the system to recover from the malfunction.
+- This helps ensure that the system continues to run smoothly and doesn’t remain in an error state for too long.
+
+

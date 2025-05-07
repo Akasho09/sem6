@@ -132,6 +132,11 @@ The instruction tells the CPU to move (in reality, `COPY`) the source operand to
 ie M[r1]<-a
 > MOV A, direct → Move direct address content to accumulator.
 > MOVX A, @DPTR → Move external data memory content to accumulator.
+> MOVC A, @A+DPTR      ; Read from external ROM
+- MOVC = Move Code memory to Accumulator.
+It reads a byte from CODE (ROM) memory, not RAM, and stores it in the accumulator A.
+The address it reads from is formed by adding the contents of A to either DPTR or PC.
+
 
 - EXAMPLE :
 MOV A,#55H ;load value 55H into reg. A
@@ -152,27 +157,25 @@ MOV A,R3 ;copy contents of R3 into A ;now A=R3=95H
   - Moving a value that is too large into a register will cause an error
   > MOV A, #7F2H ; ILLEGAL: 7F2H>8 bits (FFH)
 
-
-
 --- 
 
 PUSH direct → Push content to stack.
 POP direct → Pop content from stack.
 
 Arithmetic Instructions.
-ADD A, Rn → Add register Rn to accumulator
+- ADD A, Rn → Add register Rn to accumulator
 SUBB A, direct → Subtract direct address content from A with borrow
 MUL AB → Multiply A and B (16-bit result in A and B)
 DIV AB → Divide A by B (A = quotient, B = remainder)
 
 
 Logical Instructions
-ANL A, Rn → AND operation between A and register Rn
-ORL A, direct → OR operation between A and direct address content
+- ANL A, Rn → AND operation between A and register Rn
+- ORL A, direct → OR operation between A and direct address content
 XRL A, #data → XOR immediate data with A
 CPL A → Complement accumulator
-INC Rx – Increment the contents of register Rx by 1
-DEC Rx – Decrement the contents of register Rx by 1
+- INC Rx – Increment the contents of register Rx by 1
+- DEC Rx – Decrement the contents of register Rx by 1
 DJNZ Rn, label - DJNZ (Decrement and Jump if Not Zero)
 
 Branching (Jump & Call) Instructions
@@ -183,7 +186,7 @@ JZ label → Jump if A is zero
 JNZ label → Jump if A is nonzero
 CALL address → Call subroutine at given address
 RET → Return from subroutine
--    DJNZ R1 , LOOP : 
+-  DJNZ R1 , LOOP : 
 Decrement and jump.
 - CJMP A, Temp , l3 : 
 compare and jump.
