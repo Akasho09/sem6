@@ -91,4 +91,84 @@ RIP is one of the oldest distance-vector routing protocols used to help routers 
 | Next Hop       | 4            | IP address of next hop router         |
 | Metric         | 4            | Hop count (1 to 16, where 16 = infinity)|
 
+- RIP Packet (V1 format)
+![alt text](image.png)
 ---
+
+
+## Distnace Vector Protocol :
+-  intra-Domain protocol. 
+- Process:
+    - Initialization: Each router knows only its directly connected networks.
+
+    - Exchange: Periodically shares its routing table with neighbors.
+
+    - Update: Updates its table if a better path is found via a neighbor.
+
+    - Convergence: Repeats until all routers agree on paths (network convergence).
+
+### problems :
+1. 🔁 Count-to-Infinity Problem (in Distance Vector Routing)
+The Count-to-Infinity problem occurs in distance vector routing protocols like RIP when routers continuously increment the hop count to a destination that has become unreachable, without ever realizing the route is broken.
+🧯 Example Scenario:
+A — B — C
+A is connected to B, and B is connected to C.
+
+All routers initially know the correct route to each other.
+
+Step-by-Step Problem:
+Link A–B fails → A can no longer reach the destination.
+B doesn’t know the link is broken yet, and still advertises to C that it can reach A.
+C receives B’s advertisement and thinks: “Oh, I can reach A via B + 1 hop.”
+C advertises this back to B, saying: “I can reach A in 2 hops.”
+B thinks: “Oh! Maybe C knows a way to A!” and updates to 3 hops.
+This loop continues: count increases toward infinity.
+
+- 🔚 In RIP:
+Infinity is 16 hops
+So, count-to-infinity is limited to 16 steps.
+
+2. Slow Convergence: Takes time for changes to propagate.
+
+## 🌐 Link State Routing Protocol – Overview
+Link State Routing is a type of dynamic routing protocol where each router builds a complete map (topology) of the network. It’s faster, more accurate, and more scalable than distance vector routing.
+
+| Term                                     | Description                                                                 |
+| ---------------------------------------- | --------------------------------------------------------------------------- |
+| **Link State**                           | Information about a router’s directly connected links (cost, status, etc.). |
+| **LSA (Link State Advertisement)**       | A packet that advertises a router’s link states to other routers.           |
+| **LSDB (Link State Database)**           | A collection of all received LSAs used to build the network topology.       |
+| **SPF Algorithm (Dijkstra’s Algorithm)** | Used to compute the shortest path tree and determine routing tables.        |
+
+## 🛠️ Working Steps of Link State Protocol:
+1. Neighbor Discovery: Router identifies its directly connected neighbors.
+
+2. Link State Generation: It creates LSAs containing:
+
+Connected interfaces
+Costs (delays, bandwidth, etc.)
+Neighbor IDs
+
+3. Flooding: LSAs are flooded to all routers in the area, not just to neighbors.
+
+4. Topology Database Construction: Every router builds the same LSDB.
+
+5. SPF Calculation: Each router uses Dijkstra’s algorithm on the LSDB to compute shortest paths and fill its routing table.
+
+⚡ Advantages:
+Faster convergence.
+Loop-free by design (topology-based, not hop-count-based).
+More efficient use of bandwidth after initial flooding.
+
+❗ Disadvantages:
+More memory and CPU required.
+Complex to implement and configure.
+
+- OSPF is a specific implementation of a Link State protocol.
+
+
+## Flooding:
+Definition: A routing technique where every incoming packet is sent out on all outgoing links except the one it arrived on.
+Drawback: Causes packet duplication and high network overhead unless controlled.
+Control Method: Hop Count or Time-To-Live (TTL) is used to limit the spread.
+
