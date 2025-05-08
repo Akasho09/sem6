@@ -8,7 +8,7 @@ In AAL3/4, the total data passed to the SAR sublayer must be a multiple of 44 by
 - Padding bytes (to be calculated)
 - 4 bytes of CS trailer
 - 
-=> 
+=>
 4 (header) + 47,787 (data) + Padding + 4 (trailer) ≡ 0 mod 44
 47,787 + 8 = 47,795
 => Padding = (44 - 11) mod 44 = 33 bytes
@@ -81,3 +81,23 @@ Sliding Window Protocol: It allows multiple packets to be sent before receiving 
     - New Window Size: 12,000 bytes
 
     - New Send Window: 24,001 to 36,000
+
+
+## FRAME RELAY VS HDLC
+| Feature             | **Frame Relay**                                       | **HDLC (High-Level Data Link Control)**                      |
+| ------------------- | ----------------------------------------------------- | ------------------------------------------------------------ |
+| **Layer**           | Data Link Layer (but supports Layer 3 integration)    | Data Link Layer                                              |
+| **Purpose**         | WAN protocol optimized for fast packet switching      | General-purpose data link control protocol                   |
+| **Connection Type** | **Packet-switched**, virtual circuits (PVC/SVC)       | **Point-to-point or multipoint** connection                  |
+| **Error Handling**  | Minimal (relies on upper layers for error correction) | Provides **error detection and correction**                  |
+| **Flow Control**    | Not built-in                                          | Yes, includes flow control mechanisms                        |
+| **Efficiency**      | High (less overhead)                                  | Lower than Frame Relay (due to more control info)            |
+| **Encapsulation**   | Simple header with DLCI, no control field             | Has a **rich frame structure** (Flag, Address, Control, FCS) |
+| **Header Size**     | Small (typically 2 bytes)                             | Larger due to more fields                                    |
+| **Used In**         | WANs (telecom networks, ISDN backbone)                | LANs/WANs, PPP, X.25, and embedded systems                   |
+| **Multiplexing**    | Supports multiple logical connections (DLCIs)         | No inherent support                                          |
+| **Standardized By** | ITU-T & ANSI                                          | ISO                                                          |
+
+
+- extra 8 bit field control after address .
+- defines the type of HDLC Frame SUI.
