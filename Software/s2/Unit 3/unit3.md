@@ -179,6 +179,11 @@ A defect refers to a situation when the application is not working as per the re
 3. What is an Error?
 Error is a situation that happens when the Development team or the developer fails to understand a requirement definition and hence that misunderstanding gets translated into buggy code. This situation is referred to as an Error and is mainly a term coined by the developers.
 
+-  🔍 Real-world Example (Login System):
+Error: Developer forgets to check for empty password fields (if(password === "")).
+Defect: The login form allows submission with an empty password.
+Bug: Users are able to log in without entering a password — a bug seen in production.
+
 4. What is a Fault?
 Sometimes due to certain factors such as Lack of resources or not following proper steps Fault occurs in software which means that the logic was not incorporated to handle the errors in the application. This is an undesirable situation, but it mainly happens due to invalid documented steps or a lack of data definitions.
 

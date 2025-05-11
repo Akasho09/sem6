@@ -41,7 +41,6 @@ Certification	    External audit required.	        Process improvement model, no
 Applicability	    Applies to all industries.	        Specifically for software development.
 
 
-
 ## Difference Between Functional & Non-Functional Requirements
 Feature	                Functional Requirements	                                        Non-Functional Requirements
 Definition	            Define specific functionalities a system must perform.	            Define quality attributes of the system.

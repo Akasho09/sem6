@@ -28,3 +28,4 @@ This is a fault (a code-level error), but the system may still run without issue
 
 - Failure Example:
 When a user tries to log in and the system lets them in without checking the correct condition due to the above fault — this is a failure (the system did not behave as expected).
+

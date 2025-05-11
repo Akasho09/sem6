@@ -23,11 +23,9 @@ If a built software is 99% bug-free but does not follow the user requirement the
 only necessary that software is 99% bug-free but it is also mandatory to fulfill all the customer
 requirements.
 
-
 ### Testing types: Static vs. Dynamic, Black-box vs. White-box
 
 🔹 Functional Testing Techniques
-
 Boundary Value Analysis (BVA): Tests at the edges of input ranges.
 Equivalence Class Testing: Groups inputs into valid and invalid partitions.
 
@@ -38,11 +36,8 @@ Converts input conditions and output actions into a graphical representation for
 Also called White-box Testing.
 
 Includes:
-
 Path Testing: Checks all possible execution paths.
-
 Data Flow Testing: Focuses on variables’ lifecycle (definition, usage, deletion).
-
 Mutation Testing: Checks code robustness by introducing small faults.
 
 ## 🔹 Types of Testing
@@ -249,7 +244,7 @@ tested.
 
 
 Types of Non-functional Testing
-1. Performance Testing
+1. Performance Testing : SSSL 
 2. Usability Testing
 3. Compatibility Testing
 

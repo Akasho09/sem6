@@ -17,7 +17,7 @@
 1. Communication Gaps – Misunderstanding between customers and analysts.
 1. Overload of Requirements – Managing excessive and redundant requirements.
 
-### Steps in Requirement Analysis in RE:
+### Steps in Requirement Analysis in RE:  SAVED
 ![alt text](image-1.png)
 1. StakeHolder Identification.
 2. Elicitation gathering.

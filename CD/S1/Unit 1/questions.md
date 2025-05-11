@@ -35,3 +35,35 @@ Continues processing without missing characters across buffers.
 Once Buffer 2’s sentinel is hit, Buffer 1 is refilled, and the process alternates.
 
 
+## 🔷 Compiler vs Interpreter: Key Differences
+
+| Feature                  | **Compiler**                                                             | **Interpreter**                                      |
+| ------------------------ | ------------------------------------------------------------------------ | ---------------------------------------------------- |
+| **Working**              | Translates **entire program** at once into machine code.                 | Translates and **executes line-by-line**.            |
+| **Execution Speed**      | **Faster** after compilation.                                            | **Slower** due to real-time translation.             |
+| **Error Detection**      | Shows **all errors after scanning entire code**.                         | Shows **errors one at a time during execution**.     |
+| **Output**               | Produces a **separate executable file**.                                 | **No separate file**; executes directly.             |
+| **Memory Usage**         | **More memory** (stores compiled code).                                  | **Less memory** usage.                               |
+| **Examples**             | C, C++, Java (compiles to bytecode), Go                                  | Python, JavaScript, Ruby, PHP                        |
+| **Reusability of Code**  | Once compiled, code can be run multiple times **without recompilation**. | Needs to be interpreted **every time**.              |
+| **Development Use Case** | Better for **production-level, optimized code**.                         | Better for **scripting, debugging, dynamic coding**. |
+
+
+## Reasons for Using DFA in Lexical Analysis
+A Deterministic Finite Automaton (DFA) is commonly used in the Lexical Analyzer phase of a compiler due to the following reasons:
+
+1. Efficiency in Pattern Matching
+DFA scans input in linear time (O(n)), making it ideal for real-time token recognition.
+It does not backtrack – hence faster than NFA (Non-deterministic Finite Automata).
+
+2. Deterministic Behavior
+Every state has only one transition per input symbol, which simplifies implementation.
+No ambiguity during traversal ensures consistent and predictable results.
+
+3. Simplicity
+Easy to implement using tables (transition tables).
+Simplifies the process of matching regular expressions to tokens.
+
+4. Foundation for Lexical Analyzers
+Tools like Lex or Flex convert regular expressions to DFA automatically.
+DFAs represent regular languages, which are sufficient for describing tokens (identifiers, numbers, keywords, etc.).
