@@ -11,7 +11,7 @@ collect, analyze, and document the needs of the system. It ensures that the fina
 expectations and business objectives. 
 
 ### Steps in Requirement Gathering:
-1. Requirement Elicitation
+1. Requirement Elicitation :  POSIBWD
 o The process of collecting requirements from stakeholders (clients, users, developers).
 o Techniques used:
 ▪ Interviews – Direct discussions with stakeholders.
@@ -95,7 +95,6 @@ stakeholders. It helps in defining clear and precise software requirements.
     • Pros: Unbiased insights into actual workflow.
     • Cons: Users may modify behavior when observed.
 
-
     4. Prototyping
     • Creating a sample version (mockup) of the software to get feedback before full development.
     • Helps visualize UI and system functionality.
@@ -120,8 +119,22 @@ stakeholders. It helps in defining clear and precise software requirements.
     • Pros: Encourages real-time discussions and quicker decision-making.
     • Cons: Requires proper facilitation to stay productive.
 
+### FAST – Facilitated Application Specification Technique
+- It is a requirement elicitation technique used during the early stages of software development to gather requirements from stakeholders. It is especially useful when stakeholders find it hard to articulate requirements formally.
 
-2. Requirement Documentation
+#### ✅ Key Features of FAST:
+   1. Facilitated Meetings: Involves structured meetings between clients, developers, and a trained facilitator.
+
+   2. Collaborative: Encourages all stakeholders to contribute ideas in an open environment.
+
+   3. Goal-Oriented: Focuses on identifying goals, constraints, and desired functionality of the system.
+
+   4. Visual Tools: Uses diagrams like DFDs, ER diagrams, and use case models to support communication.
+
+   5. Resolution of Conflicts: Helps resolve inconsistencies or contradictions in requirements.
+
+
+2. Requirement Documentation:
 Requirement documentation involves recording and structuring the gathered requirements in a formal
 document. The most common format is the Software Requirement Specification (SRS).
    1. Software Requirement Specification (SRS)
@@ -134,18 +147,18 @@ document. The most common format is the Software Requirement Specification (SRS)
     5. Constraints – Limitations like budget, time, and technology stack.
     6. Assumptions & Dependencies – External factors affecting the project (e.g., third-party integrations).
 
-3. Importance of Requirement Documentation
-• Ensures clarity and eliminates misunderstandings.
-• Serves as a reference for development and testing teams.
-• Helps in project tracking and change management.
-• Assists in future maintenance and updates.
+   3. Importance of Requirement Documentation
+      • Ensures clarity and eliminates misunderstandings.
+      • Serves as a reference for development and testing teams.
+      • Helps in project tracking and change management.
+      • Assists in future maintenance and updates.
 
 ## What is Risk Management?
 Risk management is the process of identifying, analyzing, and mitigating risks that may impact a software
 project. Risks can cause delays, increased costs, or project failure, so effective risk management ensures
 project success.
 
-- Types of Risks in Software Projects
+- Types of Risks in Software Projects : PBET
     1. Project Risks
     • Budget Overrun: Unexpected costs exceeding the planned budget.
     • Schedule Slippage: Project not completed on time due to poor planning or delays.
@@ -234,7 +247,7 @@ There are three types of COCOMO Model:
 - Tdev = c*(E)^d
 - Person required = Effort/ Time
 Where,
-E is effort a pplied in Person-Months
+E is effort applied in Person-Months
 KLOC is the estimated size of the software product indicate in Kilo Lines of Code
 Tdev is the development time in months
 
@@ -248,12 +261,10 @@ Tdev is the development time in months
 - b => +.7 , +.8
 
 
-2. Intermediate COCOMO Model
-The basic COCOMO model assumes that the effort is only a function of the number of lines of code and
-some constants evaluated according to the different software systems. However, in reality, no system’s
-effort and schedule can be solely calculated based on Lines of Code. For that, various other factors such as
-reliability, experience, and Capability. These factors are known as `Cost Drivers` (multipliers) and the
-Intermediate Model utilizes 15 such drivers for cost estimation.
+2. Intermediate COCOMO Model : 15 drives in 4 categs (PPPH)
+The basic COCOMO model assumes that the effort is only a function of the number of lines of code and some constants evaluated according to the different software systems. However, in reality, no system’s effort and schedule can be solely calculated based on Lines of Code. 
+- For that, various other factors such as reliability, experience, and Capability. These factors are known as `Cost Drivers` (multipliers) and the Intermediate Model utilizes 15 such drivers for cost estimation.
+
 - Classification of Cost Drivers and their Attributes:
 The cost drivers are divided into four categories : 
 1. Product attributes:

@@ -23,11 +23,11 @@ Transmission Control Protocol/Internet Protocol
 - The header of a TCP segment can range from 20-60 bytes. 
 - 40 bytes are for options. If there are no options, a header is 20 bytes (32bits(4bytes)*5) else it can be of upmost 60 bytes. 
 - Source Port Address – 
-A 16-bit field that holds the port address of the application that is sending the data segment. 
-eg : 80 for HTTPS requests.
+   A 16-bit field that holds the port address of the application that is sending the data segment. 
+   eg : 80 for HTTPS requests.
 
 - Destination Port Address – 
-A 16-bit field that holds the port address of the application in the host that is receiving the data segment. 
+   A 16-bit field that holds the port address of the application in the host that is receiving the data segment. 
  
 - Sequence Number – 
 A 32-bit field that holds the sequence number, i.e, (the byte number of the first byte that is sent in that particular segment). It is used to reassemble the message at the receiving end of the segments that are received out of order.
@@ -240,7 +240,7 @@ Agent Solicitation is a mechanism used by mobile nodes (devices) to request agen
 | 12   | 0–1  | **Parameter Problem**          | Sent when a packet header has invalid or missing fields.                                  |
 
 - extended header is unised all 0s
-- error message is ICMP header + IP header and 8 bytes of datagram data ; 
+> error message is ICMP header + IP header and 8 bytes of datagram data ; 
 
 ![alt text](<Screenshot 2025-03-07 at 1.20.04 AM.png>)
 
@@ -308,6 +308,8 @@ Router may follow up with a Group-Specific Query to check if any other host stil
 
 ### mESSAGE FORMAT 
 
+- IGMP V2 
+![alt text](image-11.png)
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 |  Type (8)     | Max Resp Time |       Checksum                |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+

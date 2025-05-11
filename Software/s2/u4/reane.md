@@ -1,6 +1,5 @@
 ## ✅ Unit 4: Software Testing
-🔹 Software Testing Terminology
-Bug, Error, Defect, Failure, etc.
+🔹 Software Testing Terminology Bug, Error, Defect, Failure, etc.
 
 ### PRINCIPLES OF SOFTWARE TESTING :
 1. Testing shows the Presence of Defects
@@ -10,8 +9,8 @@ To find the defect in the software, early test activity shall be started. The de
 phases of SDLC will be very less expensive. For better performance of software, software testing will
 start at the initial phase i.e. testing will perform at the requirement analysis phase.
 4. Defect Clustering
-In a project, a small number of modules can contain most of the defects. The Pareto Principle for
-software testing states that 80% of software defects come from 20% of modules.
+In a project, a small number of modules can contain most of the defects. 
+- The Pareto Principle for software testing states that 80% of software defects come from 20% of modules.
 5. Pesticide Paradox
 Repeating the same test cases, again and again, will not find new bugs. So it is necessary to review the
 test cases and add or update test cases to find new bugs.
@@ -28,8 +27,8 @@ requirements.
 ### Testing types: Static vs. Dynamic, Black-box vs. White-box
 
 🔹 Functional Testing Techniques
-Boundary Value Analysis (BVA): Tests at the edges of input ranges.
 
+Boundary Value Analysis (BVA): Tests at the edges of input ranges.
 Equivalence Class Testing: Groups inputs into valid and invalid partitions.
 
 🔹 Cause-Effect Graphing
@@ -49,111 +48,79 @@ Mutation Testing: Checks code robustness by introducing small faults.
 ## 🔹 Types of Testing
 ![alt text](image-2.png)
 
-
 2. **Automation Testing**
 Automated Testing is a technique where the Tester writes scripts independently and uses suitable Software or Automation Tools to test the software. It is an Automation Process of a Manual Process. It allows for executing repetitive tasks without the use of a Manual Tester.
 
 - Advantages of Automation Testing:
-Simplifies Test Case Execution: Automation testing can be left virtually unattended and thus it allows monitoring of the results at the end of the process. Thus, simplifying the overall test execution and increasing the efficiency of the application.
-Improves Reliability of Tests: Automation testing ensures that there is equal focus on all the areas of the testing, thus ensuring the best quality end product.
-Increases amount of test coverage: Using automation testing, more test cases can be created and executed for the application under test. Thus, resulting in higher test coverage and the detection of more bugs. This allows for the testing of more complex applications and more features can be tested.
-Minimizing Human Interaction: In automation testing, everything is automated from test case creation to execution thus there are no changes for human error due to neglect. This reduces the necessity for fixing glitches in the post-release phase.
+1. Simplifies Test Case Execution: Automation testing can be left virtually unattended and thus it allows monitoring of the results at the end of the process. Thus, simplifying the overall test execution and increasing the efficiency of the application.
+2. Improves Reliability of Tests: Automation testing ensures that there is equal focus on all the areas of the testing, thus ensuring the best quality end product.
+3. Increases amount of test coverage: Using automation testing, more test cases can be created and executed for the application under test. Thus, resulting in higher test coverage and the detection of more bugs. This allows for the testing of more complex applications and more features can be tested.
+4. Minimizing Human Interaction: In automation testing, everything is automated from test case creation to execution thus there are no changes for human error due to neglect. This reduces the necessity for fixing glitches in the post-release phase.
 
 1. **Manual Testing**
 Manual testing is a technique to test the software that is carried out using the functions and features of an application. Which means manual testing will be check the defect manually with trying one by one function is working as expected.
 
 - Advantages of Manual Testing:
-Fast and accurate visual feedback: It detects almost every bug in the software application and is used to test the dynamically changing GUI designs like layout, text, etc.
-Less expensive: It is less expensive as it does not require any high-level skill or a specific type of tool.
-No coding is required: No programming knowledge is required while using the black box testing method. It is easy to learn for the new testers.
-Efficient for unplanned changes: Manual testing is suitable in case of unplanned changes to the application, as it can be adopted easily.
+1. Fast and accurate visual feedback: It detects almost every bug in the software application and is used to test the dynamically changing GUI designs like layout, text, etc.
+2. Less expensive: It is less expensive as it does not require any high-level skill or a specific type of tool.
+3. No coding is required: No programming knowledge is required while using the black box testing method. It is easy to learn for the new testers.
+4. Efficient for unplanned changes: Manual testing is suitable in case of unplanned changes to the application, as it can be adopted easily.
 
 #### Types of Manual Testing
 1. White Box Testing
 2. Black Box Testing
 3. Gray Box Testing
 
-1. White Box Testing
-White box testing techniques analyze the internal structures the used data structures, internal design, code
-structure, and the working of the software rather than just the functionality as in black box testing. It is also called
-glass box testing clear box testing or structural testing. White Box Testing is also known as transparent testing or
-open box testing.
-White box testing is a software testing technique that involves testing the` internal structure` and workings of a
-software application. The tester has access to the source code and uses this knowledge to design test cases that
-can verify the correctness of the software at the code level.
+1. White Box Testing -> SUI
+White box testing techniques analyze the internal structures the used data structures, internal design, code structure, and the working of the software rather than just the functionality as in black box testing. It is also called glass box testing clear box testing or structural testing. White Box Testing is also known as transparent testing or open box testing.
+White box testing is a software testing technique that involves testing the` internal structure` and workings of a software application. The tester has access to the source code and uses this knowledge to design test cases that can verify the correctness of the software at the code level.
 - Advantages of White box Testing:
 • Thorough Testing: White box testing is thorough as the entire code and structures are tested.
-• Code Optimization: It results in the optimization of code removing errors and helps in removing
-extra lines of code.
-• Early Detection of Defects: It can start at an earlier stage as it doesn’t require any interface as in
-the case of black box testing.
-• Integration with SDLC: White box testing can be easily started in the Software Development Life
-Cycle.
-• Detection of Complex Defects: Testers can identify defects that cannot be detected through other
-testing techniques.
+• Code Optimization: It results in the optimization of code removing errors and helps in removing extra lines of code.
+• Early Detection of Defects: It can start at an earlier stage as it doesn’t require any interface as in the case of black box testing.
+• Integration with SDLC: White box testing can be easily started in the Software Development Life Cycle.
+• Detection of Complex Defects: Testers can identify defects that cannot be detected through other testing techniques.
 
-2. Black Box Testing
-Black-box testing is a type of software testing in which the tester is not concerned with the internal knowledge or
-implementation details of the software but rather focuses on validating the functionality based on the provided
-specifications or requirements.
+2. Black Box Testing -> F , NF
+Black-box testing is a type of software testing in which the tester is not concerned with the internal knowledge or implementation details of the software but rather focuses on validating the functionality based on the provided specifications or requirements.
 Advantages of Black Box Testing:
-• The tester does not need to have more functional knowledge or programming skills to implement
-the Black Box Testing.
+• The tester does not need to have more functional knowledge or programming skills to implement the Black Box Testing.
 • It is efficient for implementing the tests in the larger system.
 • Tests are executed from the user’s or client’s point of view.
 • Test cases are easily reproducible.
 • It is used to find the ambiguity and contradictions in the functional specifications.
 
 3. Gray Box Testing
-Gray Box Testing is a software testing technique that is a combination of the Black Box Testing technique and
-the White Box Testing technique.
+Gray Box Testing is a software testing technique that is a combination of the Black Box Testing technique and the White Box Testing technique.
 1. In the Black Box Testing technique, the tester is unaware of the internal structure of the item being  tested and in White Box Testing the internal structure is known to the tester.
 2. The internal structure is partially known in Gray Box Testing.
 3. This includes access to internal data structures and algorithms to design the test cases.
 Advantages of Gray Box Testing:
-1. Clarity of goals: Users and developers have clear goals while doing testing.
-Done from a user perspective: Gray box testing is mostly done from the user perspective.
-2. High programming skills not required: Testers are not required to have high programming skills
-for this testing.
-Non-intrusive: Gray box testing is non-intrusive.
-3. Improved product quality: Overall quality of the product is improved.
+   1. Clarity of goals: Users and developers have clear goals while doing testing.
+     2. Done from a user perspective: Gray box testing is mostly done from the user perspective.
+     3. High programming skills not required: Testers are not required to have high programming skills for this testing.
+     4. Non-intrusive: Gray box testing is non-intrusive.
+     5. Improved product quality: Overall quality of the product is improved.
 
 
 #### Types of Black Box Testing
-1. Functional Testing : Functional Testing is a type of Software Testing in which the system is tested against the functional
-requirements and specifications. Functional testing ensures that the requirements or specifications are
-properly satisfied by the application. This type of testing is particularly concerned with the result of processing.
+1. Functional Testing : SUI
+Functional Testing is a type of Software Testing in which the system is tested against the functional requirements and specifications. Functional testing ensures that the requirements or specifications are properly satisfied by the application. This type of testing is particularly concerned with the result of processing.
 It focuses on the simulation of actual system usage but does not develop any system structure assumptions.
 - Benefits of Functional Testing
 • Bug-free product: Functional testing ensures the delivery of a bug-free and high-quality product.
-• Customer satisfaction: It ensures that all requirements are met and ensures that the customer is
-satisfied.
-• Testing focused on specifications: Functional testing is focused on specifications as per customer
-usage.
-• Proper working of application: This ensures that the application works as expected and ensures
-proper working of all the functionality of the application.
-• Improves quality of the product: Functional testing ensures the security and safety of the product
-and improves the quality of the product.
+• Customer satisfaction: It ensures that all requirements are met and ensures that the customer is satisfied.
+• Testing focused on specifications: Functional testing is focused on specifications as per customer usage.
+• Proper working of application: This ensures that the application works as expected and ensures proper working of all the functionality of the application.
+• Improves quality of the product: Functional testing ensures the security and safety of the product and improves the quality of the product.
 
-2. Non-Functional Testing
-Non-functional Testing is a type of Software Testing that is performed to verify the non-functional
-requirements of the application. It verifies whether the behavior of the system is as per the requirement or not.
-It tests all the aspects that are not tested in functional testing. Non-functional testing is a software testing
-technique that checks the non-functional attributes of the system. Non-functional testing is defined as a type of
-software testing to check non-functional aspects of a software application. It is designed to test the readiness of
-a system as per nonfunctional parameters which are never addressed by functional testing. Non-functional
-testing is as important as functional testing.
-Benefits of Non-functional Testing
-• Improved performance: Non-functional testing checks the performance of the system and
-determines the performance bottlenecks that can affect the performance.
-• Less time-consuming: Non-functional testing is overall less time-consuming than the other testing
-process.
-• Improves user experience: Non-functional testing like Usability testing checks how easily usable
-and user-friendly the software is for the users. Thus, focus on improving the overall user experience
-for the application.
-• More secure product: As non-functional testing specifically includes security testing that checks
-the security bottlenecks of the application and how secure is the application against attacks from
-internal and external sources.
+2. Non-Functional Testing : PUC
+Non-functional Testing is a type of Software Testing that is performed to verify the non-functional requirements of the application. It verifies whether the behavior of the system is as per the requirement or not. It tests all the aspects that are not tested in functional testing. Non-functional testing is a software testing technique that checks the non-functional attributes of the system. Non-functional testing is defined as a type of software testing to check non-functional aspects of a software application. It is designed to test the readiness of a system as per nonfunctional parameters which are never addressed by functional testing. Non-functional testing is as important as functional testing.
+Benefits of Non-functional Testing:
+• Improved performance: Non-functional testing checks the performance of the system and determines the performance bottlenecks that can affect the performance.
+• Less time-consuming: Non-functional testing is overall less time-consuming than the other testing process.
+• Improves user experience: Non-functional testing like Usability testing checks how easily usable and user-friendly the software is for the users. Thus, focus on improving the overall user experience for the application.
+• More secure product: As non-functional testing specifically includes security testing that checks the security bottlenecks of the application and how secure is the application against attacks from internal and external sources.
 
 ##### Types of Functional Testing
 1. Unit Testing
@@ -163,57 +130,38 @@ internal and external sources.
 5. Acceptance testing
 
 
-1. Unit Testing
-Unit testing is a method of testing individual units or components of a software application. It is typically done
-by developers and is used to ensure that the individual units of the software are working as intended. Unit tests
-are usually automated and are designed to test specific parts of the code, such as a particular function or method.
-Unit testing is done at the lowest level of the software development process , where individual units of code
-are tested in isolation.
+1. Unit Testing:
+Unit testing is a method of testing individual units or components of a software application. It is typically done by developers and is used to ensure that the individual units of the software are working as intended. Unit tests are usually automated and are designed to test specific parts of the code, such as a particular function or method. Unit testing is done at the lowest level of the software development process , where individual units of code are tested in isolation 
 > Note: Unit Testing basically Included in both White Box Testing and Black Box Testing.
 Advantages of Unit Testing:
 Some of the advantages of Unit Testing are listed below.
-• It helps to identify bugs early in the development process before they become more difficult and
-expensive to fix.
+• It helps to identify bugs early in the development process before they become more difficult and expensive to fix.
 • It helps to ensure that changes to the code do not introduce new bugs.
 • It makes the code more modular and easier to understand and maintain.
 • It helps to improve the overall quality and reliability of the software.
 Note: Some popular frameworks and tools that are used for unit testing include JUnit , NUnit, and xUnit.
-• It’s important to keep in mind that Unit Testing is only one aspect of software testing and it should be
-used in combination with other types of testing such as integration testing, functional testing, and
-acceptance testing to ensure that the software meets the needs of its users.
-• It focuses on the smallest unit of software design. In this, we test an individual unit or group of
-interrelated units. It is often done by the programmer by using sample input and observing its
-corresponding outputs.
+• It’s important to keep in mind that Unit Testing is only one aspect of software testing and it should be used in combination with other types of testing such as integration testing, functional testing, and acceptance testing to ensure that the software meets the needs of its users.
+• It focuses on the smallest unit of software design. In this, we test an individual unit or group of interrelated units. It is often done by the programmer by using sample input and observing its corresponding outputs.
 Example:
-1.  In a program we are checking if the loop, method, or function is working fine.
+1. In a program we are checking if the loop, method, or function is working fine.
 2. Misunderstood or incorrect, arithmetic precedence.
 3. Incorrect initialization.
 
 
 2. Integration Testing
-Integration testing is a method of testing how different units or components of a software application interact
-with each other. It is used to identify and resolve any issues that may arise when different units of the software
-are combined. Integration testing is typically done after unit testing and before functional testing and is used to
-verify that the different units of the software work together as intended.
-Different Ways of Performing Integration Testing:
-Different ways of Integration Testing are discussed below.
-• Top-down integration testing: It starts with the highest-level modules and differentiates them from
-lower-level modules.
-• Bottom-up integration testing: It starts with the lowest-level modules and integrates them with
-higher-level modules.
+Integration testing is a method of testing how different units or components of a software application interact with each other. It is used to identify and resolve any issues that may arise when different units of the software are combined. Integration testing is typically done after unit testing and before functional testing and is used to verify that the different units of the software work together as intended.
+
+- Different Ways of Performing Integration Testing:
+• Top-down integration testing: It starts with the highest-level modules and differentiates them from lower-level modules.
+• Bottom-up integration testing: It starts with the lowest-level modules and integrates them with higher-level modules.
 • Big-Bang integration testing: It combines all the modules and integrates them all at once.
-• Incremental integration testing: It integrates the modules in small groups, testing each group as it is
-added.
+• Incremental integration testing: It integrates the modules in small groups, testing each group as it is added.
 Advantages of Integrating Testing
-• It helps to identify and resolve issues that may arise when different units of the software are
-combined.
+• It helps to identify and resolve issues that may arise when different units of the software are combined.
 • It helps to ensure that the different units of the software work together as intended.
 • It helps to improve the overall reliability and stability of the software.
-• It’s important to keep in mind that Integration testing is essential for complex systems where
-different components are integrated.
-• As with unit testing, integration testing is only one aspect of software testing and it should be used
-in combination with other types of testing such as unit testing, functional testing, and acceptance
-testing to ensure that the software meets the needs of its users.
+• It’s important to keep in mind that Integration testing is essential for complex systems where different components are integrated.
+• As with unit testing, integration testing is only one aspect of software testing and it should be used in combination with other types of testing such as unit testing, functional testing, and acceptance testing to ensure that the software meets the needs of its users.
 > The objective is to take unit-tested components and build a program structure that has been dictated by design.
 Integration testing is testing in which a group of components is combined to produce output.
 Integration testing is of four types: (i) Top-down (ii) Bottom-up (iii) Sandwich (iv) Big-Bang
@@ -261,15 +209,14 @@ Integration testing is of four types: (i) Top-down (ii) Bottom-up (iii) Sandwich
         • Low-level utilities are also tested well and are also compatible with the object-oriented structure.
 
 
-3. System Testing
+3. System Testing :
 System testing is a type of software testing that evaluates the overall functionality and performance of a
 complete and fully integrated software solution. It tests if the system meets the specified requirements and if it
 is suitable for delivery to the end-users. This type of testing is performed after the integration testing and
 before the acceptance testing.
 System Testing is a type of software testing that is performed on a completely integrated system to evaluate the
 compliance of the system with the corresponding requirements. In system testing, integration testing passed
-components are taken as input. The goal of integration testing is to detect any irregularity between the units that
-are integrated.
+components are taken as input. The goal of integration testing is to detect any irregularity between the units that are integrated.
 Advantages of System Testing:
 • The testers do not require more knowledge of programming to carry out this testing.
 • It will test the entire product or software so that we will easily detect the errors or defects that
@@ -343,6 +290,8 @@ eg Taking the year as a Single Fault Assumption i.e. year will be having values 
 It is a type of black-box testing that can be applied to all levels of software testing . In this technique, input data are divided into the equivalent partitions that can be used to derive test cases-
 • In this input data are divided into different equivalence data classes.
 • It is applied when there is a range of input values.
+
+- Equivalence class testing is a black-box software testing technique where input data is categorized into groups called equivalence classes, and then representative values are selected from each class for testing.
 
 - Consider a field that accepts a minimum of 6 characters and a maximum of 10 characters. Then the partition of
 the test cases ranges 0 – 5, 6 – 10, 11 – 14.

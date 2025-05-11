@@ -13,7 +13,7 @@ FTP (File Transfer Protocol) is a standard network protocol used for transferrin
 | **Authentication**  | Typically uses username and password; supports anonymous access as well                |
 | **Direction**       | Supports both upload (PUT) and download (GET)                                          |
 
-![alt text](image.png)
+![](image.png)
 
 ### 🔹 Working of FTP
 1. Client Initiation:

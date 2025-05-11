@@ -54,7 +54,7 @@ User Involvement            	Limited	                                      High,
 Suitable For                	Simple, clear requirements	                   Complex, high-risk projects
 
 
-> 
+>
 ✅ Use Case Diagram (Textual Description):
 Actors:
 
@@ -75,3 +75,28 @@ Upload Marks
 View Results
 
 Publish Results
+
+
+## 2. Verification and Validation (V&V)
+1. Verification:
+“Are we building the product right?”
+Ensures that the software meets specifications and design requirements (reviews, inspections, walkthroughs).
+
+2. Validation:
+“Are we building the right product?”
+Ensures the final product meets the user's needs (testing, user acceptance).
+
+## Reuse-Oriented Model
+1. Focuses on reusing existing software components, libraries, or services to reduce development time.
+
+2. Consists of component analysis, requirements modification, design adaptation, and integration.
+
+## Configuration Management
+
+1. A discipline for controlling changes to software artifacts.
+2. Maintains consistency, integrity, and traceability throughout the software life cycle.
+- Key processes: Version Control, Change Management, Build Management.
+- Git is used to manage versions of a project. If a developer makes a mistake, they can revert to a previous version → version control in config management.
+![](image.png)
+
+

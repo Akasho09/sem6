@@ -56,3 +56,16 @@ Testing	                Can be tested using test cases.	                        
 
 ## 
 ![alt text](image-12.png)
+
+
+## Compare V-Model with Prototyping Model of Software Development along with a neat diagram
+
+| Criteria         | V-Model                    | Prototyping Model           |
+| ---------------- | -------------------------- | --------------------------- |
+| Approach         | Sequential and V-shaped    | Iterative and user-driven   |
+| Requirements     | Clearly defined from start | Evolving with user feedback |
+| Flexibility      | Less flexible              | Highly flexible             |
+| User Involvement | Minimal                    | High                        |
+| Risk Handling    | Poor                       | Better                      |
+
+

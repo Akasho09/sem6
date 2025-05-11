@@ -3,9 +3,7 @@
 ### 🔍 Problem Analysis
 
 Understanding the root causes of a problem.
-
 Identifying system goals and constraints.
-
 Involves feasibility study and cost-benefit analysis.
 
 ### 📊 Data Flow Diagrams (DFD)
@@ -60,12 +58,10 @@ UML diagrams that show system functionalities from a user’s perspective.
 
 - Coupling refers to the degree of interdependence between software modules. 
 - High coupling means that modules are closely connected and changes in one module may affect other modules. Low coupling means that modules are independent, and changes in one module have little impact on other modules.
-- Cohesion refers to the degree to which elements within a module work together to fulfill a single, well-
 
-defined purpose.  High cohesion means that elements are closely related and focused on a single purpose, while low cohesion means that elements are loosely related and serve multiple purposes.
+- Cohesion refers to the degree to which elements within a module work together to fulfill a single, well- defined purpose.  High cohesion means that elements are closely related and focused on a single purpose, while low cohesion means that elements are loosely related and serve multiple purposes.
 
 High cohesion = better maintainability.
-
 Low coupling = better modularity.
 
 ### 📦 Classification of Cohesiveness & Coupling
@@ -75,70 +71,68 @@ Low coupling = better modularity.
 ![alt text](image.png)
 
 1. Content Coupling:
+Modules share data directly through `global variables` or parameters. This is the `strongest` coupling method and is not recommended because it tightly couples the modules and makes them highly dependent on each other.
 
-Modules share data directly through global variables or parameters. This is the strongest coupling method and is not recommended because it tightly couples the modules and makes them highly dependent on each other.
+- hIGHEST cOUPLING.
 
-2. General Coupling:
-
-Modules share global data or resources that are frequently used and modified by different modules. Although not as direct as pooling content, it still represents tight pooling through shared resources.
+2. Common Coupling:
+Modules share global data or resources that are `frequently used` and modified by different modules. Although not as direct as pooling content, it still represents tight pooling through shared resources.
 
 3. External Coupling:
-
-Modules communicate by exchanging data through external interfaces such as function parameters or method calls. Although external binding is more flexible than content and general binding, it can still cause dependencies.
+Modules communicate by exchanging data through `external interfaces` such as function parameters or method calls. Although external binding is more flexible than content and general binding, it can still cause dependencies.
+-  The modules depend on other modules, external to the software being developed or to a particular type of hardware. Ex- protocol, external file, device format, etc.
 
 4. Control Coupling:
-
 One module affects the behaviour of another by passing control information, often through parameters. This type of connection may be less direct than a content connection but still requires close communication.
 
 5. Stamp Coupling:
-
-Modules share a composite data structure such as a record or object without sharing. Changes to the structure can affect several modules, but the connection is weaker than in the content connection.
+Modules share a `composite data structure ` such as a record or object without sharing. Changes to the structure can affect several modules, but the connection is weaker than in the content connection.
+- It involves tramp data. It may be necessary due to efficiency factors- this choice was
+made by the insightful designer, not a lazy programmer.
 
 6. Data Coupling:
-
 Modules share data through parameters, but there is no direct relationship between functions. Compared to the previous types, it is a relatively loose form of connection.
 
 ### Cohesion Types: Functional, Sequential, Communicational, Procedural, Temporal, Logical, Coincidental.
 
-![alt text](image-1.png)
+![](image-1.png)
 
-Functional Cohesion:
-
+1. Functional Cohesion:
 Elements within a module are grouped based on a single, specific functionality or task. This is the strongest form of cohesion, where all elements contribute to the same goal.
 
-Sequential Cohesion:
-
+2. Sequential Cohesion:
 Elements are organized in a linear sequence, where the output of one element becomes the input of the next. This type of cohesion is often seen in processes with step-by-step execution.
+- It occurs naturally in functional programming languages.
 
-Communicational Cohesion:
-
+3. Communicational Cohesion:
 Elements within a module work together to manipulate a shared data structure. They might not perform the same function, but their actions are closely related to a common piece of data.
+-  update record in the database and send it to the printer.
 
-Procedural Cohesion:
-
+4. Procedural Cohesion:
 Elements are grouped based on their involvement in a specific sequence of actions or steps. They might share some data, but their primary focus is on the sequence of operations.
+- Ex- calculate student GPA, print student record, calculate cumulative GPA, print cumulative GPA.
 
-Temporal Cohesion:
-
+5. Temporal Cohesion:
 Elements are grouped because they need to be executed at the same time or during the same phase. They might not share functional or data-related aspects.
 
-Coincidental Cohesion:
-
+6. Coincidental Cohesion:
 Elements are grouped arbitrarily without a clear, meaningful relationship. This type of cohesion is typically indicative of poor module design.
+- The elements are not related(unrelated). The elements have no conceptual relationship other than location in source code. It is accidental and the worst form of cohesion. Ex- print next line and reverse the characters of a string in a single component.
 
 ## 🎯 Function Oriented Design:
 
 ![alt text](<Screenshot 2025-04-07 at 3.40.46 PM.png>)
 
-Focus on functional decomposition.
+- Focus on functional decomposition.
 
-Uses DFDs to structure the system.
+- Uses DFDs (data flow diagrams) to structure the system.
 
-- In function-oriented design, the system is comprised of many smaller sub-systems known as functions. These
-functions are capable of performing significant task in the system. The system is considered as top view of all
-functions.
-- Function oriented design inherits some properties of structured design where divide and conquer methodology is
-used.
+- In function-oriented design, the system is comprised of many smaller sub-systems known as functions. These functions are capable of performing significant task in the system. The system is considered as top view of all functions.
+- Function oriented design inherits some properties of structured design where divide and conquer methodology is used.
+- Code reusability is limited.
+- Less modular, maintenance can be harder.
+
+eg : In a banking system, separate functions like deposit(), withdraw(), and transfer() operate on data.
 
 ## 🧱 Object Oriented Design
 
@@ -151,25 +145,57 @@ some methods to perform on the attributes.
 the attributes, which an object can have and methods, which defines the functionality of the object.
 More reusable and modular design.
 
-🖥️ User Interface Design
+## 🖥️ User Interface Design
 
 Principles: Consistency, Feedback, Recovery, Efficiency.
-
 Techniques: Storyboarding, Wireframing, Usability testing.
 
-🔐 Software Reliability: Failure and Faults
+## 🔐 Software Reliability: Failure and Faults
+- Software reliability refers to the probability of a software system operating without failures for a specified time and within a defined environment. 
+It's a crucial aspect of software engineering, ensuring that software performs its intended functions reliably and consistently. Software reliability is often measured using metrics like Mean Time Between Failures (MTBF) and Mean Time To Repair (MTTR).
+- Software Reliability starts with many faults in the system when first created. 
+- After testing and debugging enter a useful life cycle. 
+- Useful life includes upgrades made to the system which bring about new faults. 
+- The system needs to then be tested to reduce faults.  
+- Software reliability cannot be predicted from any physical basis, since it depends completely on the human factors in design. 
+![alt text](image-5.png)
 
-Failure: Deviation from expected behavior.
+### Hardware Reliability
+Hardware reliability is the probability that the ability of the hardware to perform its function for some period of time. It may change during certain periods such as initial burn-in or the end of useful life.
+- It is expressed as Mean Time Between Failures (MBTF).
+- Hardware faults are mostly physical faults.
+- Thorough testing of all components cuts down on the number of faults. 
+- Hardware failures are mostly due to wear and tear.
+- It follows the Bathtub curve principle for testing failure.
+![alt text](image-4.png)
 
-Fault: Defect in the code or design.
+### Terminology :
+1. What is a Bug?
+A bug refers to defects which means that the software product or the application is not working as per the adhered requirements set.
 
-Techniques: Fault avoidance, fault detection, fault tolerance.
+2. What is a Defect?
+A defect refers to a situation when the application is not working as per the requirement and the actual and expected result of the application or software are not in sync with each other.
 
-🌐 Quality Standards
+3. What is an Error?
+Error is a situation that happens when the Development team or the developer fails to understand a requirement definition and hence that misunderstanding gets translated into buggy code. This situation is referred to as an Error and is mainly a term coined by the developers.
+
+4. What is a Fault?
+Sometimes due to certain factors such as Lack of resources or not following proper steps Fault occurs in software which means that the logic was not incorporated to handle the errors in the application. This is an undesirable situation, but it mainly happens due to invalid documented steps or a lack of data definitions.
+
+5. What is a Failure?
+Failure is the accumulation of several defects that ultimately lead to Software failure and results in the loss of information in critical modules thereby making the system unresponsive. Generally, such situations happen very rarely because before releasing a product all possible scenarios and test cases for the code are simulated. Failure is detected by end-users once they face a particular issue in the software.
+
+- Failure: Deviation from expected behavior.
+- Fault: Defect in the code or design.
+- Techniques: Fault avoidance, fault detection, fault tolerance.
+
+
+## 🌐 Quality Standards
 
 ISO 9001: International standard for quality management systems.
-
-SEI-CMM: Capability Maturity Model for software processes. Levels: Initial → Repeatable → Defined → Managed → Optimizing.
+SEI-CMM: Capability Maturity Model for software processes. 
+- Levels: Initial → Repeatable → Defined → Managed → Optimizing.
+> IRDMO
 
 ### ✅ ISO 9001 vs SEI-CMM
 

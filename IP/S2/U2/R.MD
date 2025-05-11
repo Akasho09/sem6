@@ -1,4 +1,3 @@
-
 ## 1. 🧭 ARP (Address Resolution Protocol)
 When a device wants to communicate with another device on the same LAN and knows its IP address but not its MAC address, it uses ARP to discover the MAC address:
 Steps:
@@ -11,13 +10,14 @@ Steps:
 **Used to resolve IP address to MAC address.**
 
 Address Resolution Protocol (ARP) is a protocol or procedure that connects an ever-changing Internet Protocol (IP) address to a fixed physical machine address, also known as a media access control (MAC) address, in a local-area network (LAN).
-or 
-- PHYSICAL ADD -----ARP-----> LOGICAL ADD .
-- LOGICAL ADD  -----RARP----> PHYSICAL ADD .
+
+- PHYSICAL ADD -----ARP-----> LOGICAL ADD.
+- LOGICAL ADD  -----RARP----> PHYSICAL ADD.
  - This mapping procedure is important because the lengths of the IP and MAC addresses differ, and a translation is needed so that the systems can recognize one another. The most used IP today is IP version 4 (IPv4). An IP address is 32 bits long. However, MAC addresses are 48 bits long. ARP translates the 32-bit address to 48 and vice versa.
 ![alt text](image.png)
+
 - An ARP request is broadcast;   an ARP reply is unicast. (rarp as well)
-- The RARP request packets are  broadcast;  the RARP reply packets are  unicast.
+- The RARP request packets are  broadcast;  the RARP reply packets are unicast.
 
 
 ### 📄 ARP Packet Format (28 bytes):
