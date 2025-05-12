@@ -34,7 +34,12 @@
 - eliminates comment lines, blank spaces  from code .
 - gives col, row no of error messages .
 - code continues to compile even if error to give all errors 
+
+## count lexemes 
+- longest matching 
+- "akssh" = 1 lexeme .
 ![alt text](<Screenshot 2025-02-27 at 6.46.43 PM.png>)
+
 
 ### A lexeme 
 is the actual sequence of characters that forms a meaningful unit in a programming language.

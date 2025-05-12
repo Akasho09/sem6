@@ -51,7 +51,6 @@ float pi = 3.14;
 - Output: Assembly code or object code. eg file.s or .asm
 Tools: GCC, Clang, etc.
 
-
 3. Assembler
 - Converts assembly code into machine-level object code.
 - Output: Object file (.obj or .o)
