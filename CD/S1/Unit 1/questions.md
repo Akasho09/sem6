@@ -67,3 +67,7 @@ Simplifies the process of matching regular expressions to tokens.
 4. Foundation for Lexical Analyzers
 Tools like Lex or Flex convert regular expressions to DFA automatically.
 DFAs represent regular languages, which are sufficient for describing tokens (identifiers, numbers, keywords, etc.).
+
+
+## Design a DFA for a language over {0, 1}, such that each string has even number of 0s. Also generate the regular expression for the resultant DFA using algebraic form of Arden’s Theorem.
+![alt text](image-2.png)
