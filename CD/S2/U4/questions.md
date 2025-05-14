@@ -26,6 +26,7 @@ i = i + 1
 goto L3
 L5: goto #00 (back to while condition check)
 
+![alt text](image-2.png)
 ## List the various three address code statements with suitable syntax and examples. Also evaluate the advantages of generating intermediate code in a compiler.
 ---
 ### 🔹 Types of TAC (Three Address Code) Statements:
@@ -65,7 +66,7 @@ Example: a = *ptr
 call proc, n or return x
 Example: call sum, 2
 
-### 🔹 Advantages of Using Intermediate Code (TAC):
+### Advantages of Using Intermediate Code (TAC):
 1. Machine Independence:
 It allows separation of front-end (syntax) and back-end (machine-specific) phases.
 

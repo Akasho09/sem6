@@ -8,14 +8,14 @@ A Language Processing System (LPS) is a set of tools and processes used to trans
 - Linker/Loader: Combines object files and libraries into an executable program and loads it into memory.
 The LPS bridges human-readable code and machine-level instructions, ensuring correct execution.
 
-### Need for Maintaining Two Buffers in Lexical Analysis
+## Need for Maintaining Two Buffers in Lexical Analysis
 Lexical analysis, the first phase of compilation, breaks source code into tokens (e.g., keywords, identifiers). Two buffers are often used to improve efficiency:
 
 - Speed: Reading large chunks of input at once reduces frequent I/O operations, which are slow. Two buffers allow one to be processed while the other is filled.
 - Lookahead: Lexical analyzers need to peek ahead to identify token boundaries (e.g., distinguishing if from ifstream). Two buffers ensure smooth handling of tokens spanning buffer ends without reloading.
 - Boundary Management: A single buffer risks running out of space or needing complex shifting when a token crosses the end, whereas two buffers simplify this by alternating.
 
-### Sentinel Scheme of Input Buffering in Detail
+## Sentinel Scheme of Input Buffering in Detail
 The sentinel scheme is an optimization for two-buffer lexical analysis, reducing boundary-checking overhead. Here’s how it works:
 
 - Setup:
@@ -71,3 +71,13 @@ DFAs represent regular languages, which are sufficient for describing tokens (id
 
 ## Design a DFA for a language over {0, 1}, such that each string has even number of 0s. Also generate the regular expression for the resultant DFA using algebraic form of Arden’s Theorem.
 ![alt text](image-2.png)
+
+## Semantic vs Syntactic
+| Aspect             | **Syntactic**                                                                 | **Semantic**                                                                             |
+| ------------------ | ----------------------------------------------------------------------------- | -----------------------------------------------------------------------------------------|
+| **Definition**     | Refers to the structure or form of code as defined by the language's grammar. | Pertains to the meaning or behavior of the code as per the language's rules.             |
+| **Focus**          | Ensures that the code follows the correct format and arrangement of symbols.  | Ensures that the code makes logical sense and performs as intended.                      |
+| **Checked During** | Parsing phase of compilation.                                                 | Semantic analysis phase of compilation.                                                  |
+| **Error Type**     | Syntax Error (e.g., missing semicolons, unmatched parentheses).               | Semantic Error (e.g., type mismatches, undefined variables).                             |
+| **Example**        | `int x = ;` → Missing value after '='; this is a syntax error.                | `int x = "hello";` → Assigning a string to an integer variable; this is a semantic error.|
+

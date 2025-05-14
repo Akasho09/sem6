@@ -42,6 +42,19 @@ A' → z A' | d A' | ε
     L → L, E → needs FIRST(L)
 > ⇒ FIRST(L) = {id, num, (}
 
+### ✅ Rules to Compute FIRST Sets
+1. If X is a terminal:
+FIRST(X) = { X }
+
+2. If X is ε (empty string):
+FIRST(ε) = { ε }
+
+3. If X is a non-terminal:
+For production X → Y₁ Y₂ Y₃...Yₙ, do the following:
+Add all terminals from FIRST(Y₁) to FIRST(X) except ε.
+If FIRST(Y₁) contains ε, then include FIRST(Y₂), and so on.
+If all Y₁ to Yₙ have ε in their FIRST sets, then add ε to FIRST(X).
+
 ### 🔹 FOLLOW Sets
 Let’s assume S is the start symbol → $ ∈ FOLLOW(S)
 1. From S → id = E, FOLLOW(E) includes FOLLOW(S) = {$}

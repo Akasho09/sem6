@@ -182,3 +182,26 @@ A node d of a flow graph dominates a node n if `every path` from the initial nod
 – Denoted as “d dom n”
 • The entry node of a loop dominates all nodes in the loop
 • Every node dominates itself.
+
+
+## heuristic nod listing
+list all interiors nodes till 
+{
+    leftmost has all parents listed 
+}
+
+order for TAC calac = reverse 
+
+## cost 
+1. MOV R1, R0 => cost = 1
+2. MOV a, r1 => 2
+3. MOV a, b => 3
+
+> Only 2 registers .
+
+### simple code gen cost
+more 
+1. Register is to be freed and moved cost 2 more.
+
+#### haeuristic 
+1. less bcz sequential .

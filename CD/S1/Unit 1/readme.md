@@ -67,7 +67,6 @@ Tools: GNU (Gnu's Not Unix) Assembler (as)
 - Process pseudo-operations.
 Processes assembler-specific instructions like ORG, EQU, END, etc.
 
-
 4. Linker
 - The linker’s job is to manage and connect different pieces of code and data, ensuring that all references between them are properly resolved.
 example :

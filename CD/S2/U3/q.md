@@ -14,24 +14,25 @@ E->E1=T (E.ptr = new Node ('=' , E1.ptr , T.ptr) )
 ![alt text](<Screenshot 2025-04-08 at 10.23.39 PM.png>)
 
 ## 🔹 Answer 3a: Types of Attributes
-Attributes in syntax-directed translation are used to define semantics. Two major types:
+1. 🔹 1. Synthesized Attributes
+Definition: Attributes computed from the attributes of children in the parse tree.
+Flow: From bottom to top (inherited by parent from children).
+Used in: S-attributed grammars.
 
-1. Synthesized Attributes
-Computed from children to parent in the parse tree.
-Suitable for bottom-up parsing.
-Example: For expression E → E1 + T,
+Example:
+E → E1 + T
 E.val = E1.val + T.val
+Here, E.val is synthesized using values of children E1 and T.
 
 2. Inherited Attributes
-Passed from parent or siblings to children.
-Used in top-down parsing or for passing context.
-Example: T → (E) with attribute E.inh = T.inh
+Definition: Attributes computed from the parent or siblings in the parse tree.
+Flow: From top to bottom or left to right.
+Used in: L-attributed grammars.
 
-| Aspect           | Synthesized            | Inherited               |
-| ---------------- | ---------------------- | ----------------------- |
-| Direction        | Bottom-up              | Top-down or lateral     |
-| Evaluation Order | Post-order (DFS)       | Pre-order or contextual |
-| Use Case         | Arithmetic Expressions | Type propagation        |
+Example:
+A → B C
+C.in = A.in + B.out
+Here, C.in is inherited from A.in and B.out.
 
 ## Q: What do you understand by Semantic Analysis? Highlight the role and position of a semantic analyser in an ideal compiler. Explain the semantic analysis process in brief.
 --- 

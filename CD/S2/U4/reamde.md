@@ -59,7 +59,7 @@ ie move a into RSTACK[top] ie RSTACK[R0].
 2. CASE 1:  IF label(n2)=0 ie right child label = 0
 {
 	gencode(n1),
-	gencode op n2 , RSTACK(TOP)
+	generate op n2 , RSTACK(TOP)
 }
 ie MOV a, RSTACK[TOP]
 and ADD b , RSTACK[TOP]
@@ -68,7 +68,7 @@ and ADD b , RSTACK[TOP]
 {
 	SWAP TOP 2 REGISTERS OF RSTACK ,
 	GENCODE (N2),
-	R= POP(RSTACK),
+	R = POP(RSTACK),
 	GENCODE(N1),
 	GENERATE OP R , RSTACK[TOP],
 	PUSH (R, RSTACK),
@@ -93,8 +93,6 @@ and ADD b , RSTACK[TOP]
 	GENERATE OP , T , RSTCK[TOP],
 	PUSH (T , TSATCK)
 }
-
-
 
 ![alt text](image-1.png)
 
