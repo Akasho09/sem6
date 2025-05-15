@@ -13,3 +13,4 @@ Current State	    Input	    Next State	    Explanation
 
 ## Unsolvable problems 
 1. Halting Problem.
+

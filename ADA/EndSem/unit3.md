@@ -10,7 +10,6 @@ There are two major ways to detect greedy problems –
 
 2). `Will choosing the best option at each step lead to the best overall solution?` If yes, then a greedy algorithm could be a good choice. For example – In Dijkstra’s shortest path algorithm, choosing the minimum-cost edge at each step guarantees the shortest path.
 
-
 ## Knapsack Problem
 The 0/1 Knapsack Problem states that you have a backpack with a weight limit, and you are in a room full of treasures, each treasure with a value and a weight.
 
@@ -29,7 +28,6 @@ The 0/1 Knapsack Problem states that you have a backpack with a weight limit, an
 ![alt text](image-11.png)
 
 ## JOB SEQUENCING :
-
 ![alt text](image-12.png)
 
 
@@ -46,11 +44,9 @@ A minimum spanning tree (MST) is defined as a spanning tree that has the minimum
 
 ### KRUSKALS ALGO :
 How to find MST using Kruskal’s algorithm?
-
 1. Sort all the edges in a non-decreasing order of their weight. 
 2. Pick the smallest edge. Check if it forms a cycle with the spanning tree formed so far. If the cycle is not formed, include this edge. Else, discard it. 
 3. Repeat step 2 until there are (V-1) edges in the spanning tree.
-
 > Time Complexity: O(E * log E) or O(E * log V) 
 
 ## Prim’s algorithm 
@@ -61,7 +57,6 @@ is a Greedy algorithm like Kruskal’s algorithm. This algorithm always starts w
     - At every step, it considers all the edges that connect the two sets and picks the minimum weight edge from these edges. After picking the edge, it moves the other endpoint of the edge to the set containing MST. 
 
 - Keep track of previous missed edges aslo and choose min among them if any .
-
 
 ## Dijastjra Algo: 
 ![alt text](image-14.png)

@@ -53,10 +53,8 @@ void merge(int arr[], int l, int m, int r) {
     int L[n1], R[n2];
 
     // Copy data to temp arrays
-    for (int i = 0; i < n1; i++)
-        L[i] = arr[l + i];
-    for (int j = 0; j < n2; j++)
-        R[j] = arr[m + 1 + j];
+    for (int i = 0; i < n1; i++) L[i] = arr[l + i];
+    for (int j = 0; j < n2; j++) R[j] = arr[m + 1 + j];
 
     // Merge the temp arrays
     int i = 0, j = 0, k = l;
@@ -105,13 +103,9 @@ void mergeSort(int arr[], int l, int r) {
 ### QUICK SORT ALGO : 
 🔹 Steps:
 Choose a pivot element.
-
-Partition the array so that:
-
+Partition the array so that
 Elements less than the pivot come before it
-
 Elements greater come after it
-
 Recursively apply the same logic to the sub-arrays.
 
 ```c++
@@ -133,7 +127,6 @@ int partition(int arr[], int low, int high) {
 void quickSort(int arr[], int low, int high) {
     if (low < high) {
         int pi = partition(arr, low, high); // partitioning index
-
         // Recursively sort left and right sub-arrays
         quickSort(arr, low, pi - 1);
         quickSort(arr, pi + 1, high);
@@ -167,7 +160,6 @@ O(nLog7) which is approximately O(n2.8074)
 ![alt text](image-7.png)
 
 
-
 ## A Heap 
 is a complete binary tree data structure that satisfies the heap property: for every node, the value of its children is greater than or equal to its own value. 
 Heaps are usually used to implement priority queues, where the smallest (or largest) element is always at the root of the tree.
@@ -193,7 +185,7 @@ The below table shows indices of other nodes for the ith node, i.e., arr[i]:
 
 - complexity = O(n);
 ![alt text](<../../../Screenshot 2025-05-04 at 11.17.40 PM.png>)
-
+![alt text](image-24.png)
 
 ## Operations :
 1. DELETE : 
