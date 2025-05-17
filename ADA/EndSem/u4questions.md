@@ -6,7 +6,8 @@
 
 - Dijas = V.ElogV = V^3logV.
 - Floyd Warshall =  v^3.
-space c = (nm)*(n+1)
+ space c = v^2
+<!-- space c = (nm)*(n+1) -->
 
 ## limitations of dynamic programming (DP):
 

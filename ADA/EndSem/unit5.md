@@ -26,7 +26,7 @@ Start by calculating the hash value for the first substring of the text that is 
 - Step 5: Update the hash value for each subsequent substring:
 To slide the pattern one position to the right, you remove the contribution of the leftmost character and add the contribution of the new character on the right.
 The formula for updating the hash value when moving from position ‘i’ to ‘i+1’ is:
-hash = (hash – (text[i – pattern_length]^(bpattern_length – 1))) * b + text[i]
+hash = (hash – (text[i – pattern_length]*b^(bpattern_length – 1))) * b + text[i]
 
 - Step 6: Compare hash values:
 When the hash value of a substring in the text matches the hash value of the pattern, it’s a potential match.
@@ -43,7 +43,7 @@ If the hash values match, we should perform a character-by-character comparison 
 - It is defined by tuple M = {Q, Σ, q, F, d} Where Q = Set of States in finite automata
     - Q = Set of States in finite automata
     
-    - Σ=Sets of input symbols
+    - Σ=   Sets of input symbols
 
     - q. = Initial state
 

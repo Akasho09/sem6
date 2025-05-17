@@ -13,7 +13,7 @@ Karatsuba’s algorithm:
     where:
     z2 = x1 * y1
     z0 = x0 * y0
-    z1 = (x1 + x0)(y1 + y0)
+    z1 = (x1 + x0)(y1 + y0) - sum of digits multipliation.
 
 Compute:
 z2 = 12 × 43 = 516

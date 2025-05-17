@@ -91,6 +91,8 @@ void mergeSort(int arr[], int l, int r) {
 
   ![alt text](image-3.png)
   - COMPLEXITY : 
+    T(N) = 2 * T(N/2) + M(N)
+    = 2 * T(N/2) + constant * N
   time = O(nlogn)
   space = n+logn = O(n)
 
@@ -140,11 +142,15 @@ void quickSort(int arr[], int low, int high) {
     - Best Case: (Ω(n log n)), Occurs when the pivot element divides the array into two equal halves.
     - Average Case (θ(n log n)), On average, the pivot divides the array into two parts, but not necessarily equal.
     - Worst Case: (O(n²)), Occurs when the smallest or largest element is always chosen as the pivot (e.g., sorted arrays).
+    T(N) = T(N - 1) + N * constant
+
  ![alt text](image-4.png)
 
  ![alt text](image-5.png)
 
-- SPACE :   o(n)
+- SPACE : 
+- Worst-case scenario: O(n) due to unbalanced partitioning leading to a skewed recursion tree requiring a call stack of size O(n).
+- Best-case scenario: O(log n) as a result of balanced partitioning leading to a balanced recursion tree with a call stack of size O(log n).
 
 
 ## NORMAL MULTIPLICATION USING DIVIDE AND CONQUER :
@@ -158,7 +164,6 @@ void quickSort(int arr[], int low, int high) {
 From Master's Theorem, time complexity of above method is 
 O(nLog7) which is approximately O(n2.8074)
 ![alt text](image-7.png)
-
 
 ## A Heap 
 is a complete binary tree data structure that satisfies the heap property: for every node, the value of its children is greater than or equal to its own value. 
@@ -181,7 +186,7 @@ The below table shows indices of other nodes for the ith node, i.e., arr[i]:
 
 
 ## Max Heap Construction :
-- strat from n/2 node .
+- strat from (n/2|floor value) value node .
 
 - complexity = O(n);
 ![alt text](<../../../Screenshot 2025-05-04 at 11.17.40 PM.png>)
@@ -192,7 +197,7 @@ The below table shows indices of other nodes for the ith node, i.e., arr[i]:
 - Replace the root or element to be deleted by the last element.
 - Delete the last element from the Heap.
 - Since, the last element is now placed at the position of the root node. So, it may not follow the heap property. Therefore, heapify the last node placed at the position of root.
-- Complexity : O(log n)
+> Complexity : O(log n)
 
 2. Insertion: Elements can be inserted to the heap following a similar approach as discussed above for deletion. The idea is to: 
 
@@ -200,3 +205,5 @@ The below table shows indices of other nodes for the ith node, i.e., arr[i]:
 - Insert the new element at the end of the Heap.
 - This newly inserted element may distort the properties of Heap for its parents. So, in order to keep the properties of Heap, heapify this newly inserted element following a bottom-up approach.
 ![alt text](image-9.png)
+
+3. Increase :

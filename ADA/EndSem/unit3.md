@@ -26,6 +26,14 @@ The 0/1 Knapsack Problem states that you have a backpack with a weight limit, an
 - delete the 2 in list and add new sum.
 - start comparisong new sum and not previous leasts .
 ![alt text](image-11.png)
+- Operation
+Time Complexity                    Space                           Complexity            
+Building Huffman Tree           O(N log N)                             O(N)
+
+Encoding                          O(N)                                   O(1)
+
+Decoding                            O(N)                              O(1)
+
 
 ## JOB SEQUENCING :
 ![alt text](image-12.png)
@@ -48,6 +56,9 @@ How to find MST using Kruskal’s algorithm?
 2. Pick the smallest edge. Check if it forms a cycle with the spanning tree formed so far. If the cycle is not formed, include this edge. Else, discard it. 
 3. Repeat step 2 until there are (V-1) edges in the spanning tree.
 > Time Complexity: O(E * log E) or O(E * log V) 
+- Complexity	        Kruskal's Algorithm
+    Time Complexity	    O(E log E)
+    Space Complexity	O(V + E)
 
 ## Prim’s algorithm 
 is a Greedy algorithm like Kruskal’s algorithm. This algorithm always starts with a single node and moves through several adjacent nodes, in order to explore all of the connected edges along the way.
@@ -57,6 +68,9 @@ is a Greedy algorithm like Kruskal’s algorithm. This algorithm always starts w
     - At every step, it considers all the edges that connect the two sets and picks the minimum weight edge from these edges. After picking the edge, it moves the other endpoint of the edge to the set containing MST. 
 
 - Keep track of previous missed edges aslo and choose min among them if any .
+- Aspect	            Complexity
+    Time Complexity	    O((V + E) log V)
+    Space Complexity	O(V + E)
 
 ## Dijastjra Algo: 
 ![alt text](image-14.png)
@@ -74,14 +88,15 @@ Step-by-Step Implementation
 - COMPLEXITY :
 ![alt text](image-15.png)
 - O(V){assign infinite weights to all } +  O(V){ build heap } + O(VlogV){extract min weight , v times } + O(E logV ) {Relax or delete from heap } =>
-overall `ElogV.`
+overall `ElogV.` or (O((V + E) log V))
+- Space Complexity	: O(V)
 
 ## BellMan Ford Algo :
 The Bellman-Ford algorithm is best suited to find the shortest paths in a directed graph, with one or more negative edge weights, from the source vertex to all other vertices.
 - Steps :
     - Set initial distance to zero for the source vertex, and set initial distances to infinity for all other vertices.
     - For each edge, check if a shorter distance can be calculated, and update the distance if the calculated distance is shorter.
-    - Check all edges (step 2)(V-1)times. This is as many times as there are vertices (v) , minus one.
+    - Check all edges (step 2)`(V-1)times`. This is as many times as there are vertices (v) , minus one.
     - Optional: Check for negative cycles. This will be explained in better detail later.
 ![alt text](image-16.png)
 
@@ -94,6 +109,3 @@ The Bellman-Ford algorithm is best suited to find the shortest paths in a direct
 ### DFS 
 - element explored in result and parent suspended in stack for backtracking.
 - empty all elements of stack at the end .
-
-
-

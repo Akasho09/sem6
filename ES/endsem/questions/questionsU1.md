@@ -1,4 +1,3 @@
-
 ## Create a 3*3 grid with the three processor technologies along the x-axis and the three (6) IC technologies along the y-axis. For each axis, put the most programmable form closest to the origin, and the most customized form at the end of the axis. Explain features and possible occasions for using each of the combinations of the two technologies.
 
 ANS : 

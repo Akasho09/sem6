@@ -5,25 +5,16 @@
 > eg :  Fibonacci series using Top Down memoization.
 
     if (n <= 1) {
-
         return n;
-
     }
 
     else{
-
         if (F[n]!=-1){
-
             retunr F[n];
-
         }
-
         else {
-
         return F[n] = fibonacci(n-1) + fibonacci(n-2)
-
         }
-
     }
 
 - Top-Down (Memoization) – Recursion + DP
@@ -107,7 +98,6 @@ isSubsetSum(arr, n, sum) = isSubsetSum(arr, n-1, sum) OR
                 }
 - time complexity = v^3.
 
-
 ## Longest Commong subsequence
 - O(mn) complexity.
 - m==0 or n==0 => termination cond.
@@ -125,6 +115,7 @@ max {
 - move to left and above both.
 
 ![alt text](image-20.png) 
+- O(m * n) Time and O(m * n) Space
 
 
 ## matrix chain multiplication
@@ -138,8 +129,7 @@ max {
 })
 - k table is the value of k from which the min is obtained  and gives parenthesis 
 - search for 1-4 , then new big parenthesis like 2-3(row 2) or 1-3(row 1).
-
-
+- O(n*n*n) and O(n*n) Space
 
 ## GRAPH
 1. Length - 
