@@ -3,22 +3,15 @@ The 8051 is an 8-bit microcontroller developed by Intel in 1980. It became a sta
 
 ### ✅ 2. Key Features
 - 8-bit CPU (data bus is 8-bit wide)
-
 - Harvard architecture (separate program and data memory)
-
 - Clock speed: Typically 12 MHz (with 1 instruction per 1 µs)
-
 - 128 bytes of RAM
-
 - 4 KB of ROM (on-chip)
-
 - 32 I/O lines (4 ports: P0–P3, each 8-bit)
-
 - 2 Timers/Counters (Timer 0 and Timer 1)
-
 - 1 Serial port (UART)
-
 - 5 interrupt sources (2 external, 3 internal)
+
 ![alt text](image.png)
 
 ### other poinbts
@@ -61,3 +54,8 @@ The 8051 is an 8-bit microcontroller developed by Intel in 1980. It became a sta
 | SBUF     | Serial Buffer                     | 99H     |
 | IE       | Interrupt Enable                  | A8H     |
 | IP       | Interrupt Priority                | B8H     |
+
+
+## PIN DIAGRAM 8051 
+![alt text](image-23.png)
+

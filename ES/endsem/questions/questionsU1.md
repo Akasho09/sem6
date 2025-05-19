@@ -1,7 +1,5 @@
 ## Create a 3*3 grid with the three processor technologies along the x-axis and the three (6) IC technologies along the y-axis. For each axis, put the most programmable form closest to the origin, and the most customized form at the end of the axis. Explain features and possible occasions for using each of the combinations of the two technologies.
 
-ANS : 
----
 ### ✅ Axes Explanation
 Processor Technologies (X-axis):
 1. General-Purpose Processors (GPPs) – Most programmable (e.g., CPUs)
@@ -22,10 +20,12 @@ IC Technologies (Y-axis):
 
 ## Hardware-Software Co-Design 
 is an integrated approach to developing embedded systems, where both hardware and software components are designed concurrently. This methodology ensures that hardware and software are optimized together, leading to improved system performance, efficiency, and reliability. 
+- 
 ### Challenges: 
 #### Hardware challenges 
 1. Selecting the Appropriate Model  
-2. Architectural Decisions
+2. Decision based on hardware/ software partitioning - a special case of hardware/ software codesign.
+![alt text](image-2.png)
 3. Resource Constraints
 
 #### Software Challenges 
@@ -33,12 +33,36 @@ is an integrated approach to developing embedded systems, where both hardware an
 2. Debugging and Testing
 3. Adaptability to Technological Evolution
 
+### Objectives
+1. Optimize:
+    - Timing (high performance, hard deadlines)
+    - Area (cost)
+    - Power consumption
+    - Flexibility
+    - Reliability
 
 ## An actuator 
 is a device that converts electrical signals into physical actions, enabling embedded systems to interact with the physical environment. In embedded system design, actuators play a crucial role by executing commands from the system's processor to perform tasks such as movement, control, or adjustment.
 - force, torque, or displacement, when an electrical, pneumatic or hydraulic input is supplied to it in a system
+- While sensors collect data from the environment (input), actuators act on that data to perform tasks (output).
+Sensor → Microcontroller → Actuator → Physical Action.
 
-In embedded systems, actuators serve as the "hands and feet," translating digital decisions into tangible actions. Their roles include:
+### 📌 Example: Automatic Door System
+System:
+An automatic door opens when it detects a person nearby.
+
+- Components:
+Sensor: IR/Ultrasonic sensor detects a person
+Microcontroller: Processes sensor input
+Actuator: DC motor controls door opening/closing
+
+- Process:
+IR sensor detects a person approaching.
+Sends a signal to the microcontroller.
+Microcontroller triggers a DC motor (actuator).
+Door opens/closes accordingly.
+
+In embedded systems, actuators serve as the "hands and feet," translating digital decisions into tangible actions. - Their roles include:
 1. Physical Interaction: Actuators enable systems to affect the physical world, such as moving components, opening valves, or emitting sounds.
 2. Control Mechanisms: They are integral to control systems, allowing for automation and precise control of processes.
 3. Feedback Systems: When combined with sensors, actuators help create closed-loop systems that can adjust actions based on real-time data.
@@ -84,16 +108,23 @@ For an embedded system product, four different technologies are available. Techn
 
 ## DESIGN TECHNOLOGIES :
 - Design technology plays a pivotal role in enhancing the productivity of embedded system products by streamlining development processes, optimizing performance, and ensuring cost-effectiveness. Here's how various design methodologies contribute to this enhancement:
-1. Concurrent Engineering
-Concurrent engineering involves the parallelization of design and development processes, allowing for simultaneous consideration of all aspects of product development.
-2. Digital Prototyping
-Digital prototyping allows designers and engineers to create and test virtual models of embedded systems before physical prototypes are built.
-3. Design for Manufacturability (DFM)
-DFM focuses on designing products in a way that simplifies manufacturing processes.
-4. Design for Testability (DFT)
-DFT involves incorporating features into the design that make it easier to test the embedded system,
-5. Modular Design
-Modular design entails creating a system composed of separate, interchangeable modules. 
+Discuss the role of design technology for enhancing productivity of an embedded system product. (6)
+Design technology significantly affects time-to-market, performance, cost, and reliability.
+
+Roles of Design Technology:
+1. Hardware/Software Co-Design – Enables optimization of hardware and software to achieve better performance.
+
+2. Use of High-Level Design Tools – Reduces development time (e.g., MATLAB/Simulink, VHDL, etc.).
+
+3. Rapid Prototyping – Early validation of system design via FPGA or simulators.
+
+4. Automation – Use of tools for synthesis, simulation, and debugging improves efficiency.
+
+5. Reuse of IP Cores – Reduces design cost and time by using pre-verified modules.
+
+6. Design for Testability and Scalability – Helps in reducing production time and error rate.
+
+
 
 ## CLASSIFICATION OF ES :
 
@@ -112,11 +143,9 @@ Modular design entails creating a system composed of separate, interchangeable m
         Example: Multimedia streaming devices.
 
     3. Networked Embedded Systems: Connected to a network to perform tasks.
-
     Example: Home automation systems.
 
     4. Mobile Embedded Systems: Portable devices with embedded computing.
-
     Example: Smartphones, tablets.
 
 2. based on Performance and Functional Requirements:

@@ -48,6 +48,7 @@ In software control, the programmer starts or stops the timer using instructions
 | TR1 | TCON.6 | Timer 1 run control bit (1 = start, 0 = stop) |
 | TF0 | TCON.5 | Timer 0 overflow flag                         |
 | TR0 | TCON.4 | Timer 0 run control bit (1 = start, 0 = stop) |
+![alt text](image-27.png)
 
 ```java
 MOV TMOD, #00000001B ; Timer 0, Mode 1 (16-bit timer)
@@ -58,6 +59,7 @@ AGAIN: JNB TF0, AGAIN ; Wait until Timer 0 overflows
 > CLR TR0              ; Stop Timer 0
 > CLR TF0              ; Clear overflow flag
 ```
+
 2. Hardware Control
 Hardware control means the timer only runs when a corresponding external interrupt pin is held high (logic 1) and the TRx bit is set.
 - This is useful when you want to start a timer only when an external event occurs, such as a switch press or signal from another device.

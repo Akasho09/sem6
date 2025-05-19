@@ -6,7 +6,7 @@ An Assembly language instruction consists of four fields:
  - MOV R5 , #25 => 7D25 in ROM address of 0000 and 0001
 
 ### 8051's Program Counter is 16-bit
-   -  16 bits wide : 
+   -  16 bits wide :
    - This means that it can access program addresses 0000 to FFFFH, a total of 64K bytes of code.
 
 ### Data Types :
@@ -100,7 +100,7 @@ The 8051 microcontroller has 4 register banks, and each bank contains 8 general-
 - Bank 0 is selected by default on reset.
 
 🔧 Example: Switching to Bank 2
-MOV PSW, #10H   ; 0001 0000b → RS1=1, RS0=0 → Bank 2
+> MOV PSW, #10H   ; 0001 0000b → RS1=1, RS0=0 → Bank 2
 MOV R0, #25H    ; R0 of Bank 2 (address 10H)
 
 
@@ -128,8 +128,10 @@ The Program Status Word (PSW) register controls which bank is active using the b
 The instruction tells the CPU to move (in reality, `COPY`) the source operand to the destination operand
 
 > MOV A, Rn → Move register Rn to accumulator.
-> mov @r1 , a == move to memory pointefd by r1 .
+> mov @R1 , a == move to memory pointed by r1.
 ie M[r1]<-a
+EXAMPLE: MOV R0, #40H
+         MOV @R0 , 12  =>> M[40H]<-12h
 > MOV A, direct → Move direct address content to accumulator.
 > MOVX A, @DPTR → Move external data memory content to accumulator.
 > MOVC A, @A+DPTR      ; Read from external ROM
@@ -163,8 +165,9 @@ PUSH direct → Push content to stack.
 POP direct → Pop content from stack.
 
 Arithmetic Instructions.
-- ADD A, Rn → Add register Rn to accumulator
-SUBB A, direct → Subtract direct address content from A with borrow
+- ADD A, Rn → Add contents register Rn to accumulator
+- ADD A,@R0 ;add the byte pointer to by R0
+- SUBB A, direct → Subtract direct address content from A with `borrow`
 MUL AB → Multiply A and B (16-bit result in A and B)
 DIV AB → Divide A by B (A = quotient, B = remainder)
 
@@ -176,7 +179,7 @@ XRL A, #data → XOR immediate data with A
 CPL A → Complement accumulator
 - INC Rx – Increment the contents of register Rx by 1
 - DEC Rx – Decrement the contents of register Rx by 1
-DJNZ Rn, label - DJNZ (Decrement and Jump if Not Zero)
+- DJNZ Rn, label - DJNZ (Decrement and Jump if Not Zero)
 
 Branching (Jump & Call) Instructions
 - SJMP label → Short jump (within ±127 bytes)
@@ -184,20 +187,27 @@ Branching (Jump & Call) Instructions
 AJMP address → Absolute jump (11-bit address)
 JZ label → Jump if A is zero
 JNZ label → Jump if A is nonzero
-CALL address → Call subroutine at given address
+- ACALL address → Call subroutine at given address
 RET → Return from subroutine
 -  DJNZ R1 , LOOP : 
 Decrement and jump.
 - CJMP A, Temp , l3 : 
 compare and jump.
-- 
+- CJNE A, #50, CHECK_50 
+compare and jump if not equal 
+; ie not equal to 50 , can be greater or lesser
+; if <50 => carry will be generated .
+CHECK_50:
+    JC STORE_LESS_50     ; If A < 50, store in <50 group
+
+
 
 
 Bit Manipulation Instructions
 - SETB C → Set carry flag
   SETB P0.7  ===> SET 87H , 1 is 90.
 - CLR C → Clear carry flag
-CPL C → Complement carry flag
+- CPL C → Complement carry flag
 - JB bit, label → Jump if bit is set
 acc.7
 - JNB bit, label → Jump if bit is not set

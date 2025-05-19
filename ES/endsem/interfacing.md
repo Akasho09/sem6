@@ -27,8 +27,40 @@ COUNT EQU 200
     MOV R3,#COUNT
     AGAIN: MOV A,P1
     MOVX @DPTR,A
-    ACALL DELAY
+    # ACALL DELAY
     INC DPTR
     DJNZ R3,AGAIN
     HERE: SJMP HERE
 ```
+
+## MEMORY INTERFACING OF 8051 TO EXTERNAL RAM AND ROM
+### Interface 2*2KB ROMs(EPROMs) and 2*4KB RAMs
+1. 2KB EPROMs
+ - address lines = 2*2^10=2^11 => 11 address lines .
+ - Data lines = 8 bcz Bytes are used.
+ - control lines = PSEN(bar) for ROM data read.
+ - Chip select is determined .
+
+ 2. 4KB RAM.
+ - address liens = 12.
+ - data = 8.
+ - control = 2 (RD(bar) and WR(bar) ) for RAM interface of 8051.
+![alt text](image-21.png)
+
+1. Microcontroller .
+- P0(AD0-1D7) is connected to ALE to enable Address and then to Rest External RAMs and ROMs.
+- D0-D7 from P0 again to ALL. 
+- P2(AD8-AD15).
+- PSEN => to 2 EPROMs
+- RD => to RAMS 
+- WR => ..
+- (EA (External Access)) => to VCC to enable internal RAM aslo.
+![alt text](image-22.png)
+
+2. Exrernal ROMs and RAMs
+- input is 
+  - Data lines
+  - Addres lines only upto respective number .
+  - OE(Output Enable) in all from PSEN or RD .
+  - CS in all is particular address line ie A12 or A11 and ~ to 2nd RAM or ROM .
+  - WE (write enable ) in RAMs.
